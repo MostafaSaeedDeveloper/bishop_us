@@ -3,7 +3,7 @@
         <div class="container large">
           <div class="footer-top-inner">
             <div class="footer-logo">
-              <a href="index.html"><img src="assets/imgs/logo/logo-2-light.png" alt="site-logo"></a>
+              <a href="{{ route('front.home') }}"><img src="assets/imgs/logo/logo-2-light.png" alt="site-logo"></a>
             </div>
             <div class="info-text">
               <div class="text-wrapper">
@@ -27,7 +27,7 @@
                 <div class="subscription-text">
                   <div class="text-wrapper">
                     <p class="text">By subscribing you agree with our
-                      <a href="contact.html">Privacy Policy</a>
+                      <a href="{{ route('front.contact') }}">Privacy Policy</a>
                     </p>
                   </div>
                 </div>
@@ -35,31 +35,31 @@
               <div class="footer-widget-box">
                 <h2 class="title">Company</h2>
                 <ul class="footer-nav-list">
-                  <li><a href="contact.html">agency</a></li>
-                  <li><a href="contact.html">Solutions</a></li>
-                  <li><a href="contact.html">Community</a></li>
-                  <li><a href="contact.html">Work</a></li>
-                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="{{ route('front.contact') }}">agency</a></li>
+                  <li><a href="{{ route('front.contact') }}">Solutions</a></li>
+                  <li><a href="{{ route('front.contact') }}">Community</a></li>
+                  <li><a href="{{ route('front.contact') }}">Work</a></li>
+                  <li><a href="{{ route('front.contact') }}">Contact</a></li>
                 </ul>
               </div>
               <div class="footer-widget-box">
                 <h2 class="title">Social</h2>
                 <ul class="footer-nav-list">
-                  <li><a href="contact.html">Facebook</a></li>
-                  <li><a href="contact.html">Twitter</a></li>
-                  <li><a href="contact.html">Dribbble</a></li>
-                  <li><a href="contact.html">Instagram</a></li>
-                  <li><a href="contact.html">Awwwards</a></li>
-                  <li><a href="contact.html">YouTube</a></li>
+                  <li><a href="{{ route('front.contact') }}">Facebook</a></li>
+                  <li><a href="{{ route('front.contact') }}">Twitter</a></li>
+                  <li><a href="{{ route('front.contact') }}">Dribbble</a></li>
+                  <li><a href="{{ route('front.contact') }}">Instagram</a></li>
+                  <li><a href="{{ route('front.contact') }}">Awwwards</a></li>
+                  <li><a href="{{ route('front.contact') }}">YouTube</a></li>
                 </ul>
               </div>
               <div class="footer-widget-box">
                 <h2 class="title">Office</h2>
                 <ul class="footer-nav-list">
-                  <li><a href="contact.html">New York</a></li>
-                  <li><a href="contact.html">Toronto</a></li>
-                  <li><a href="contact.html">Berlin</a></li>
-                  <li><a href="contact.html">London</a></li>
+                  <li><a href="{{ route('front.contact') }}">New York</a></li>
+                  <li><a href="{{ route('front.contact') }}">Toronto</a></li>
+                  <li><a href="{{ route('front.contact') }}">Berlin</a></li>
+                  <li><a href="{{ route('front.contact') }}">London</a></li>
                 </ul>
               </div>
             </div>
