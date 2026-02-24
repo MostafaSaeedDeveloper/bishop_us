@@ -2,7 +2,8 @@
 
 
 @section('content')
- <!-- page title area start  -->
+
+        <!-- page title area start  -->
         <section class="page-title-area">
           <div class="container large">
             <div class="page-title-area-inner section-spacing-top">
@@ -522,5 +523,4 @@
           </div>
         </div>
         <!-- team list area end  -->
-
 @endsection
