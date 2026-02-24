@@ -3,7 +3,7 @@
         <div class="container large">
           <div class="footer-top-inner">
             <div class="footer-logo">
-              <a href="index.html"><img src="assets/imgs/logo/logo-2-light.png" alt="site-logo"></a>
+              <a href="{{ route('front.home') }}"><img src="{{ asset('assets/imgs/logo/logo-2-light.png') }}" alt="site-logo"></a>
             </div>
             <div class="info-text">
               <div class="text-wrapper">
@@ -20,14 +20,14 @@
                 <form action="#" class="subscribe-form">
                   <div class="input-field">
                     <input type="email" placeholder="Enter your email">
-                    <button type="submit" class="subscribe-btn"><img src="assets/imgs/icon/icon-1.png"
+                    <button type="submit" class="subscribe-btn"><img src="{{ asset('assets/imgs/icon/icon-1.png') }}"
                         alt="image"></button>
                   </div>
                 </form>
                 <div class="subscription-text">
                   <div class="text-wrapper">
                     <p class="text">By subscribing you agree with our
-                      <a href="contact.html">Privacy Policy</a>
+                      <a href="{{ route('front.contact') }}">Privacy Policy</a>
                     </p>
                   </div>
                 </div>
@@ -35,11 +35,11 @@
               <div class="footer-widget-box">
                 <h2 class="title">Company</h2>
                 <ul class="footer-nav-list">
-                  <li><a href="contact.html">agency</a></li>
-                  <li><a href="contact.html">Solutions</a></li>
-                  <li><a href="contact.html">Community</a></li>
-                  <li><a href="contact.html">Work</a></li>
-                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="{{ route('front.about') }}">About</a></li>
+                  <li><a href="{{ route('front.services.index') }}">Solutions</a></li>
+                  <li><a href="{{ route('front.blog.index') }}">Community</a></li>
+                  <li><a href="{{ route('front.projects.index') }}">Work</a></li>
+                  <li><a href="{{ route('front.contact') }}">Contact</a></li>
                 </ul>
               </div>
               <div class="footer-widget-box">
