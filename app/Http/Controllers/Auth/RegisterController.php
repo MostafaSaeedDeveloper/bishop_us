@@ -7,6 +7,7 @@ use App\Models\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Str;
 
 class RegisterController extends Controller
 {
@@ -63,8 +64,18 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        $baseUsername = Str::slug($data['name']) ?: Str::before($data['email'], '@');
+        $username = $baseUsername;
+        $counter = 1;
+
+        while (User::where('username', $username)->exists()) {
+            $username = $baseUsername . $counter;
+            $counter++;
+        }
+
         return User::create([
             'name' => $data['name'],
+            'username' => $username,
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);

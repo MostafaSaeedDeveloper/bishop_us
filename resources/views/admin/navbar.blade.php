@@ -2,7 +2,7 @@
         <div class="bg-header-dark">
           <div class="content-header bg-white-5">
             <!-- Logo -->
-            <a class="fw-semibold text-white tracking-wide" href="index.html">
+            <a class="fw-semibold text-white tracking-wide" href="{{ route('dashboard') }}">
               <span class="smini-visible">
                 D<span class="opacity-75">x</span>
               </span>
@@ -118,10 +118,15 @@
           <div class="content-side">
             <ul class="nav-main">
               <li class="nav-main-item">
-                <a class="nav-main-link active" href="be_pages_dashboard.html">
-                  <i class="nav-main-link-icon fa fa-location-arrow"></i>
+                <a class="nav-main-link {{ request()->routeIs('dashboard') ? 'active' : '' }}" href="{{ route('dashboard') }}">
+                  <i class="nav-main-link-icon fa fa-gauge-high"></i>
                   <span class="nav-main-link-name">Dashboard</span>
-                  <span class="nav-main-link-badge badge rounded-pill bg-primary">8</span>
+                </a>
+              </li>
+              <li class="nav-main-item">
+                <a class="nav-main-link {{ request()->routeIs('admin.projects.*') ? 'active' : '' }}" href="{{ route('admin.projects.index') }}">
+                  <i class="nav-main-link-icon fa fa-briefcase"></i>
+                  <span class="nav-main-link-name">Projects</span>
                 </a>
               </li>
               <li class="nav-main-item">
