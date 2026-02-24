@@ -8,7 +8,7 @@
           <div class="container large">
             <div class="page-title-area-inner section-spacing-top">
               <div class="page-title-wrapper">
-                <h2 class="page-title fade-anim">Since 2012</h2>
+                <h2 class="page-title fade-anim">About Bishop</h2>
               </div>
             </div>
           </div>
@@ -22,36 +22,36 @@
               <div class="section-header fade-anim">
                 <div class="section-title-wrapper">
                   <div class="subtitle-wrapper">
-                    <span class="section-subtitle">About studio</span>
+                    <span class="section-subtitle">Who We Are</span>
                   </div>
                   <div class="title-wrapper">
-                    <h2 class="section-title font-sequelsans-romanbody">Crafting digital products
-                      with a unique — vision of
-                      making user experience
-                      better.</h2>
+                    <h2 class="section-title font-sequelsans-romanbody">Bishop Integrated Solutions is an
+                      information technology and marketing agency
+                      helping businesses grow
+                      successfully since 2018.</h2>
                   </div>
                 </div>
               </div>
               <div class="section-content-wrapper fade-anim">
                 <div class="info-list">
                   <ul>
-                    <li>Art Direction</li>
-                    <li>Capability</li>
-                    <li>Sustainability </li>
+                    <li>IT Solutions</li>
+                    <li>Branding & Marketing</li>
+                    <li>Web & Mobile Development</li>
                   </ul>
                 </div>
                 <div class="section-content">
                   <div class="text-wrapper" data-direction="right">
-                    <p class="text">Redox is the first and only creative agency for your real exploration. It’s one
-                      private place to save everything you can realize about digital beautifully design.</p>
-                    <p class="text">As a global creative agency, we understand the importance of staying ahead of the
-                      game. That’s why we partner with some of the world's best talent to bring fresh ideas</p>
+                    <p class="text">At a high level, digital marketing refers to advertising delivered through digital
+                      channels such as search engines, websites, social media, email, and mobile apps.</p>
+                    <p class="text">Our rich qualifications in ERP, web design and development, mobile applications,
+                      branding, logo design, and digital marketing enable us to breathe life into your ideas.</p>
                   </div>
                   <div class="btn-wrapper" data-direction="right">
-                    <a href="about.html" class="rr-btn">
+                    <a href="{{ route('front.services.index') }}" class="rr-btn">
                       <span class="btn-wrap">
-                        <span class="text-one">Explore Services</span>
-                        <span class="text-two">Explore Services</span>
+                        <span class="text-one">Our Services</span>
+                        <span class="text-two">Our Services</span>
                       </span>
                     </a>
                   </div>
@@ -88,55 +88,46 @@
               <div class="section-header fade-anim">
                 <div class="section-title-wrapper">
                   <div class="subtitle-wrapper">
-                    <span class="section-subtitle">Approach</span>
+                    <span class="section-subtitle">Our Direction</span>
                   </div>
                   <div class="title-wrapper">
-                    <h2 class="section-title font-sequelsans-romanbody">Method of making
-                      better result</h2>
+                    <h2 class="section-title font-sequelsans-romanbody">Mission, vision,
+                      and strategy</h2>
                   </div>
                 </div>
               </div>
               <div class="approach-wrapper-box">
                 <div class="approach-wrapper fade-anim">
                   <div class="approach-box">
-                    <h2 class="title">Problem <br>
-                      discovery <img src="assets/imgs/shape/shape-13.webp" alt="image"></h2>
+                    <h2 class="title">Our <br>
+                      Mission <img src="assets/imgs/shape/shape-13.webp" alt="image"></h2>
                     <div class="approach-list">
                       <ul>
-                        <li>Usability Studies</li>
-                        <li>User Interviews</li>
-                        <li>Stakeholder Interviews</li>
-                        <li>Competitive Research</li>
-                        <li>Insights Report</li>
-                        <li>User Journey</li>
+                        <li>Be the region’s leading integrated solutions developer</li>
+                        <li>Build inspiration for growing businesses</li>
+                        <li>Deliver professional outcomes</li>
                       </ul>
                     </div>
                   </div>
                   <div class="approach-box">
-                    <h2 class="title">Design <br>
-                      system ready <img src="assets/imgs/shape/shape-13.webp" alt="image"></h2>
+                    <h2 class="title">Our <br>
+                      Vision <img src="assets/imgs/shape/shape-13.webp" alt="image"></h2>
                     <div class="approach-list">
                       <ul>
-                        <li>Thinking Workshops</li>
-                        <li>Sitemaps</li>
-                        <li>Concepts</li>
-                        <li>Designs</li>
-                        <li>Prototypes</li>
-                        <li>Usability Studies</li>
+                        <li>Realize diverse customer aspirations</li>
+                        <li>Create captivating digital marketing plans</li>
+                        <li>Deliver intelligent IT solutions</li>
                       </ul>
                     </div>
                   </div>
                   <div class="approach-box">
-                    <h2 class="title">Design <br>
-                      implementation </h2>
+                    <h2 class="title">Our <br>
+                      Strategy </h2>
                     <div class="approach-list">
                       <ul>
-                        <li>Design</li>
-                        <li>Use Cases</li>
-                        <li>User Flows</li>
-                        <li>Various User Types</li>
-                        <li>Annotations</li>
-                        <li>Interactions</li>
+                        <li>Know the brand, industry, market, and customer</li>
+                        <li>Provide unbiased strategic communication solutions</li>
+                        <li>Use digital, design, content, and tech in one approach</li>
                       </ul>
                     </div>
                   </div>
@@ -155,31 +146,31 @@
               <div class="section-header fade-anim">
                 <div class="section-title-wrapper">
                   <div class="subtitle-wrapper">
-                    <span class="section-subtitle">Who are we?</span>
+                    <span class="section-subtitle">Our Philosophy</span>
                   </div>
                   <div class="title-wrapper">
-                    <h2 class="section-title font-sequelsans-romanbody">We deliver creative
-                      ideas to a crowded world.</h2>
+                    <h2 class="section-title font-sequelsans-romanbody">We are meticulous in every detail and
+                      committed to delivering beyond expectations.</h2>
                   </div>
                 </div>
               </div>
               <div class="counter-wrapper-box fade-anim">
                 <div class="counter-wrapper">
                   <div class="funfact-item">
-                    <p class="text">35+ Google reviews</p>
-                    <h3 class="number t-counter">4.9</h3>
+                    <p class="text">Founded</p>
+                    <h3 class="number t-counter">2018</h3>
                   </div>
                   <div class="funfact-item">
-                    <p class="text">Clients world-wide</p>
-                    <h3 class="number t-counter">170+</h3>
+                    <p class="text">Core focus</p>
+                    <h3 class="number">IT & Marketing</h3>
                   </div>
                   <div class="funfact-item">
-                    <p class="text">Completed projects</p>
-                    <h3 class="number t-counter">1.7k</h3>
+                    <p class="text">Service model</p>
+                    <h3 class="number">Integrated</h3>
                   </div>
                   <div class="funfact-item">
-                    <p class="text">Client satisfaction</p>
-                    <h3 class="number t-counter">95%</h3>
+                    <p class="text">Commitment</p>
+                    <h3 class="number">Long-term value</h3>
                   </div>
                 </div>
               </div>
@@ -194,8 +185,8 @@
             <div class="container large">
               <div class="section-header fade-anim">
                 <div class="text-wrapper">
-                  <p class="text">Help to brands growing up and show
-                    their success stories to the world</p>
+                  <p class="text">Bishop is an integrated electronic world where entrepreneurs find systems,
+                    strategic marketing plans, brands, and advertisements.</p>
                 </div>
               </div>
             </div>
@@ -303,19 +294,18 @@
                 <div class="section-content">
                   <div class="section-title-wrapper">
                     <div class="title-wrapper">
-                      <h2 class="section-title font-sequelsans-romanbody">Collaborate with a super
-                        down-to-earth, mad-talented team</h2>
+                      <h2 class="section-title font-sequelsans-romanbody">Let&apos;s work together</h2>
                     </div>
                   </div>
                   <div class="text-wrapper">
-                    <p class="text">A collective bunch working on incredible projects and building enduring
-                      partnerships that extend well beyond the deliverable.</p>
+                    <p class="text">We align the latest IT and networking solutions with your strategic business
+                      objectives and marketing identity through an efficient service model.</p>
                   </div>
                   <div class="btn-wrapper">
-                    <a href="contact.html" class="rr-btn">
+                    <a href="{{ route('front.contact') }}" class="rr-btn">
                       <span class="btn-wrap">
-                        <span class="text-one">Learn More</span>
-                        <span class="text-two">Learn More</span>
+                        <span class="text-one">Contact Us</span>
+                        <span class="text-two">Contact Us</span>
                       </span>
                     </a>
                   </div>
@@ -334,47 +324,46 @@
               <div class="section-header fade-anim">
                 <div class="section-title-wrapper">
                   <div class="subtitle-wrapper">
-                    <span class="section-subtitle">Awards</span>
+                    <span class="section-subtitle">Why Choose Us</span>
                   </div>
                   <div class="title-wrapper" data-direction="left">
-                    <h2 class="section-title font-sequelsans-romanbody">We believe in quality, not
-                      quantity, that’s why we’re
-                      great ever.</h2>
+                    <h2 class="section-title font-sequelsans-romanbody">Complete marketing communication
+                      solutions that deliver the right direction for your brand.</h2>
                   </div>
                 </div>
               </div>
               <div class="awards-wrapper-box fade-anim">
                 <div class="awards-wrapper">
                   <div class="award-box">
-                    <div class="category">Awwwards</div>
+                    <div class="category">Capabilities</div>
                     <ul class="award-list">
-                      <li>7x Honorable Mention<span>2014</span></li>
-                      <li>4x Site of the Day<span>2016</span></li>
-                      <li>2x Developer Awards<span>2016</span></li>
-                      <li>1x Site of the Year<span>2019</span></li>
-                      <li>1x Design of the Year<span>2025</span></li>
+                      <li>ERP Solutions<span>Core</span></li>
+                      <li>Web Design & Development<span>Core</span></li>
+                      <li>Mobile Applications<span>Core</span></li>
+                      <li>Branding & Logo Design<span>Core</span></li>
+                      <li>Digital Marketing<span>Core</span></li>
                     </ul>
                   </div>
                   <div class="award-box">
-                    <div class="category">CSS Design</div>
+                    <div class="category">Principles</div>
                     <ul class="award-list">
-                      <li>2x Website of the Day<span>2014</span></li>
-                      <li>1x Best Innovation<span>2016</span></li>
-                      <li>5x UX Design<span>2016</span></li>
-                      <li>6x Creative Design<span>2019</span></li>
+                      <li>Know the Brand<span>01</span></li>
+                      <li>Know the Industry<span>02</span></li>
+                      <li>Know the Market<span>03</span></li>
+                      <li>Know the Customer<span>04</span></li>
                     </ul>
                   </div>
                   <div class="award-box">
-                    <div class="category">Dribbble</div>
+                    <div class="category">Approach</div>
                     <ul class="award-list">
-                      <li>2x Design of the Day<span>2014</span></li>
-                      <li>2x Site of the Day<span>2016</span></li>
+                      <li>Unbiased strategic solutions<span>01</span></li>
+                      <li>Integrated digital execution<span>02</span></li>
                     </ul>
                   </div>
                   <div class="award-box">
-                    <div class="category">Behance</div>
+                    <div class="category">Outcome</div>
                     <ul class="award-list">
-                      <li>5x Featured Design<span>2025</span></li>
+                      <li>Win-Win partnerships for life<span>Goal</span></li>
                     </ul>
                   </div>
                 </div>
@@ -391,12 +380,10 @@
               <div class="section-header fade-anim">
                 <div class="section-title-wrapper">
                   <div class="subtitle-wrapper">
-                    <span class="section-subtitle">Team</span>
+                    <span class="section-subtitle">Contact Information</span>
                   </div>
                   <div class="title-wrapper">
-                    <h2 class="section-title font-sequelsans-romanbody">Meet the talented
-                      squad, behind the
-                      creativity</h2>
+                    <h2 class="section-title font-sequelsans-romanbody">Reach us in Saudi Arabia and Egypt for integrated digital solutions.</h2>
                   </div>
                 </div>
               </div>
@@ -404,38 +391,38 @@
                 <div class="team-wrapper">
                   <div class="team-box">
                     <div class="thumb">
-                      <a href="team-details.html"><img src="assets/imgs/team/team-1.webp" alt="image"></a>
+                      <a href="#"><img src="assets/imgs/team/team-1.webp" alt="image"></a>
                     </div>
                     <div class="content">
-                      <h3 class="name"><a href="team-details.html">James David</a></h3>
-                      <span class="post">CEO & Founder</span>
+                      <h3 class="name"><a href="#">+2 035864443</a></h3>
+                      <span class="post">Main phone</span>
                     </div>
                   </div>
                   <div class="team-box">
                     <div class="thumb">
-                      <a href="team-details.html"><img src="assets/imgs/team/team-2.webp" alt="image"></a>
+                      <a href="#"><img src="assets/imgs/team/team-2.webp" alt="image"></a>
                     </div>
                     <div class="content">
-                      <h3 class="name"><a href="team-details.html">Brenda C. Janet</a></h3>
-                      <span class="post">Lead Developer</span>
+                      <h3 class="name"><a href="#">+2 01555665776</a></h3>
+                      <span class="post">Mobile phone</span>
                     </div>
                   </div>
                   <div class="team-box">
                     <div class="thumb">
-                      <a href="team-details.html"><img src="assets/imgs/team/team-3.webp" alt="image"></a>
+                      <a href="#"><img src="assets/imgs/team/team-3.webp" alt="image"></a>
                     </div>
                     <div class="content">
-                      <h3 class="name"><a href="team-details.html">Martin Carlos</a></h3>
-                      <span class="post">Lead Designer</span>
+                      <h3 class="name"><a href="#">Ahmed Bin Hanbal Street - Al Naseem Al Gharbi - Riyadh - Saudi Arabia</a></h3>
+                      <span class="post">Riyadh office</span>
                     </div>
                   </div>
                   <div class="team-box">
                     <div class="thumb">
-                      <a href="team-details.html"><img src="assets/imgs/team/team-4.webp" alt="image"></a>
+                      <a href="#"><img src="assets/imgs/team/team-4.webp" alt="image"></a>
                     </div>
                     <div class="content">
-                      <h3 class="name"><a href="team-details.html">Garry J. Coburn</a></h3>
-                      <span class="post">Project Manager</span>
+                      <h3 class="name"><a href="#">78 Abdel Salam Aref Street - Glim - Alexandria - Egypt</a></h3>
+                      <span class="post">Alexandria office</span>
                     </div>
                   </div>
                 </div>
@@ -453,68 +440,68 @@
                 <div class="team-wrapper">
                   <div class="team-box">
                     <div class="thumb">
-                      <a href="team-details.html"><img src="assets/imgs/team/team-5.webp" alt="image"></a>
+                      <a href="#"><img src="assets/imgs/team/team-5.webp" alt="image"></a>
                     </div>
                     <div class="content">
-                      <h3 class="name"><a href="team-details.html">Ana Dina Belić</a></h3>
+                      <h3 class="name"><a href="#">Web Design & Development</a></h3>
                     </div>
-                    <span class="post">Graphic Designer</span>
-                    <a href="team-details.html" class="t-btn t-btn-normal"><img src="assets/imgs/icon/icon-5.webp"
+                    <span class="post">Service</span>
+                    <a href="#" class="t-btn t-btn-normal"><img src="assets/imgs/icon/icon-5.webp"
                         alt="image"></a>
                   </div>
                   <div class="team-box">
                     <div class="thumb">
-                      <a href="team-details.html"><img src="assets/imgs/team/team-6.webp" alt="image"></a>
+                      <a href="#"><img src="assets/imgs/team/team-6.webp" alt="image"></a>
                     </div>
                     <div class="content">
-                      <h3 class="name"><a href="team-details.html">Giuseppe Carbonara</a></h3>
+                      <h3 class="name"><a href="#">Ecommerce Web Development</a></h3>
                     </div>
-                    <span class="post">Brand Strategist</span>
-                    <a href="team-details.html" class="t-btn t-btn-normal"><img src="assets/imgs/icon/icon-5.webp"
+                    <span class="post">Service</span>
+                    <a href="#" class="t-btn t-btn-normal"><img src="assets/imgs/icon/icon-5.webp"
                         alt="image"></a>
                   </div>
                   <div class="team-box">
                     <div class="thumb">
-                      <a href="team-details.html"><img src="assets/imgs/team/team-7.webp" alt="image"></a>
+                      <a href="#"><img src="assets/imgs/team/team-7.webp" alt="image"></a>
                     </div>
                     <div class="content">
-                      <h3 class="name"><a href="team-details.html">Vedran Starčić</a></h3>
+                      <h3 class="name"><a href="#">Digital Marketing</a></h3>
                     </div>
-                    <span class="post">Jr. Designer</span>
-                    <a href="team-details.html" class="t-btn t-btn-normal"><img src="assets/imgs/icon/icon-5.webp"
+                    <span class="post">Service</span>
+                    <a href="#" class="t-btn t-btn-normal"><img src="assets/imgs/icon/icon-5.webp"
                         alt="image"></a>
                   </div>
                   <div class="team-box">
                     <div class="thumb">
-                      <a href="team-details.html"><img src="assets/imgs/team/team-8.webp" alt="image"></a>
+                      <a href="#"><img src="assets/imgs/team/team-8.webp" alt="image"></a>
                     </div>
                     <div class="content">
-                      <h3 class="name"><a href="team-details.html">Izquierdo Bayà</a></h3>
+                      <h3 class="name"><a href="#">Search Engine Optimization (SEO)</a></h3>
                     </div>
-                    <span class="post">Creative Writer </span>
-                    <a href="team-details.html" class="t-btn t-btn-normal"><img src="assets/imgs/icon/icon-5.webp"
+                    <span class="post">Service</span>
+                    <a href="#" class="t-btn t-btn-normal"><img src="assets/imgs/icon/icon-5.webp"
                         alt="image"></a>
                   </div>
                   <div class="team-box">
                     <div class="thumb">
-                      <a href="team-details.html"><img src="assets/imgs/team/team-9.webp" alt="image"></a>
+                      <a href="#"><img src="assets/imgs/team/team-9.webp" alt="image"></a>
                     </div>
                     <div class="content">
-                      <h3 class="name"><a href="team-details.html">Jared Silverman</a></h3>
+                      <h3 class="name"><a href="#">P.O. Box: 21612</a></h3>
                     </div>
-                    <span class="post">Motion Designer</span>
-                    <a href="team-details.html" class="t-btn t-btn-normal"><img src="assets/imgs/icon/icon-5.webp"
+                    <span class="post">Postal info</span>
+                    <a href="#" class="t-btn t-btn-normal"><img src="assets/imgs/icon/icon-5.webp"
                         alt="image"></a>
                   </div>
                   <div class="team-box">
                     <div class="thumb">
-                      <a href="team-details.html"><img src="assets/imgs/team/team-10.webp" alt="image"></a>
+                      <a href="#"><img src="assets/imgs/team/team-10.webp" alt="image"></a>
                     </div>
                     <div class="content">
-                      <h3 class="name"><a href="team-details.html">Samuel Bertain</a></h3>
+                      <h3 class="name"><a href="#">Bishop Company. All rights reserved.</a></h3>
                     </div>
-                    <span class="post">WordPress Developer</span>
-                    <a href="team-details.html" class="t-btn t-btn-normal"><img src="assets/imgs/icon/icon-5.webp"
+                    <span class="post">Copyright</span>
+                    <a href="#" class="t-btn t-btn-normal"><img src="assets/imgs/icon/icon-5.webp"
                         alt="image"></a>
                   </div>
                 </div>
