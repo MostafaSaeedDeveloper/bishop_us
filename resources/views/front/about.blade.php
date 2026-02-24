@@ -1,8 +1,8 @@
 @extends('front.layout.master')
 
-
 @section('content')
- <!-- page title area start  -->
+
+<!-- page title area start  -->
         <section class="page-title-area">
           <div class="container large">
             <div class="page-title-area-inner section-spacing-top">
@@ -47,7 +47,7 @@
                       game. That’s why we partner with some of the world's best talent to bring fresh ideas</p>
                   </div>
                   <div class="btn-wrapper" data-direction="right">
-                    <a href="about.html" class="rr-btn">
+                    <a href="{{ route('front.about') }}" class="rr-btn">
                       <span class="btn-wrap">
                         <span class="text-one">Explore Services</span>
                         <span class="text-two">Explore Services</span>
@@ -311,7 +311,7 @@
                       partnerships that extend well beyond the deliverable.</p>
                   </div>
                   <div class="btn-wrapper">
-                    <a href="contact.html" class="rr-btn">
+                    <a href="{{ route('front.contact') }}" class="rr-btn">
                       <span class="btn-wrap">
                         <span class="text-one">Learn More</span>
                         <span class="text-two">Learn More</span>

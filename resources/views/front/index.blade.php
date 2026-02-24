@@ -65,7 +65,7 @@
                   <p class="text">Our team has more than 10 years of experience in the field of designing, programming and hosting websites as well as the field of e-marketing. The company is characterized by a technical support team at a high level of competence, experience and commitment to serve customers. We are available 24 hours / 7 days a week.</p>
                 </div>
                 <div class="btn-wrapper ">
-                  <a href="contact.html" class="rr-btn  btn-text-fli hover-bg-theme">
+                  <a href="{{ route('front.contact') }}" class="rr-btn  btn-text-fli hover-bg-theme">
                     <span class="btn-wrap">
                       <span class="text-one">Learn More</span>
                       <span class="text-two">Learn More</span>
@@ -279,13 +279,13 @@
                     </div>
 
                     <div class="content">
-                      <h3 class="title"><a href="service-details.html">Branding</a></h3>
+                      <h3 class="title"><a href="{{ route('front.services.show','details') }}">Branding</a></h3>
                       <ul class="service-list">
-                        <li><a href="service-details.html">Creative Direction</a></li>
-                        <li><a href="service-details.html">Brand Identity</a></li>
-                        <li><a href="service-details.html">Branding Strategy</a></li>
-                        <li><a href="service-details.html">Graphic Design</a></li>
-                        <li><a href="service-details.html">Startup</a></li>
+                        <li><a href="{{ route('front.services.show','details') }}">Creative Direction</a></li>
+                        <li><a href="{{ route('front.services.show','details') }}">Brand Identity</a></li>
+                        <li><a href="{{ route('front.services.show','details') }}">Branding Strategy</a></li>
+                        <li><a href="{{ route('front.services.show','details') }}">Graphic Design</a></li>
+                        <li><a href="{{ route('front.services.show','details') }}">Startup</a></li>
                       </ul>
                     </div>
                     <div class="thumb">
@@ -298,13 +298,13 @@
                     </div>
 
                     <div class="content">
-                      <h3 class="title"><a href="service-details.html">UI-UX Design</a></h3>
+                      <h3 class="title"><a href="{{ route('front.services.show','details') }}">UI-UX Design</a></h3>
                       <ul class="service-list">
-                        <li><a href="service-details.html">UI UX Consulting</a></li>
-                        <li><a href="service-details.html">UX Research</a></li>
-                        <li><a href="service-details.html">Usability Testing</a></li>
-                        <li><a href="service-details.html">Wireframing</a></li>
-                        <li><a href="service-details.html">Prototyping</a></li>
+                        <li><a href="{{ route('front.services.show','details') }}">UI UX Consulting</a></li>
+                        <li><a href="{{ route('front.services.show','details') }}">UX Research</a></li>
+                        <li><a href="{{ route('front.services.show','details') }}">Usability Testing</a></li>
+                        <li><a href="{{ route('front.services.show','details') }}">Wireframing</a></li>
+                        <li><a href="{{ route('front.services.show','details') }}">Prototyping</a></li>
                       </ul>
                     </div>
                     <div class="thumb">
@@ -317,13 +317,13 @@
                     </div>
 
                     <div class="content">
-                      <h3 class="title"><a href="service-details.html">Development</a></h3>
+                      <h3 class="title"><a href="{{ route('front.services.show','details') }}">Development</a></h3>
                       <ul class="service-list">
-                        <li><a href="service-details.html">WordPress</a></li>
-                        <li><a href="service-details.html">Webflow</a></li>
-                        <li><a href="service-details.html">Laravel Framework</a></li>
-                        <li><a href="service-details.html">React & Flutter</a></li>
-                        <li><a href="service-details.html">Design System</a></li>
+                        <li><a href="{{ route('front.services.show','details') }}">WordPress</a></li>
+                        <li><a href="{{ route('front.services.show','details') }}">Webflow</a></li>
+                        <li><a href="{{ route('front.services.show','details') }}">Laravel Framework</a></li>
+                        <li><a href="{{ route('front.services.show','details') }}">React & Flutter</a></li>
+                        <li><a href="{{ route('front.services.show','details') }}">Design System</a></li>
                       </ul>
                     </div>
                     <div class="thumb">
@@ -336,13 +336,13 @@
                     </div>
 
                     <div class="content">
-                      <h3 class="title"><a href="service-details.html">Digital Marketing</a></h3>
+                      <h3 class="title"><a href="{{ route('front.services.show','details') }}">Digital Marketing</a></h3>
                       <ul class="service-list">
-                        <li><a href="service-details.html">Online Marketing</a></li>
-                        <li><a href="service-details.html">SEO-Marketing</a></li>
-                        <li><a href="service-details.html">Strategy</a></li>
-                        <li><a href="service-details.html">Market Research</a></li>
-                        <li><a href="service-details.html">Social Reform</a></li>
+                        <li><a href="{{ route('front.services.show','details') }}">Online Marketing</a></li>
+                        <li><a href="{{ route('front.services.show','details') }}">SEO-Marketing</a></li>
+                        <li><a href="{{ route('front.services.show','details') }}">Strategy</a></li>
+                        <li><a href="{{ route('front.services.show','details') }}">Market Research</a></li>
+                        <li><a href="{{ route('front.services.show','details') }}">Social Reform</a></li>
                       </ul>
                     </div>
                     <div class="thumb">
@@ -520,7 +520,7 @@
                 <div class="section-content">
                   <div class="section-title-wrapper">
                     <div class="title-wrapper">
-                      <h2 class="section-title font-instrumentsans-medium char-anim"><a href="contact.html">Let’s
+                      <h2 class="section-title font-instrumentsans-medium char-anim"><a href="{{ route('front.contact') }}">Let’s
                           Work</a></h2>
                     </div>
                   </div>

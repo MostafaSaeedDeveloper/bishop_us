@@ -1,18 +1,246 @@
 @extends('front.layout.master')
 
 @section('content')
-<section class="breadcrumb-area">
-  <div class="container large"><div class="section-spacing"><h1 class="section-title">Our Services</h1></div></div>
-</section>
-<section class="service-area-page">
-  <div class="container large">
-    <div class="section-spacing">
-      <div class="service-wrapper-box"><div class="service-wrapper">
-        <div class="service-item"><h3>Web Development</h3><p>Corporate websites, portals and custom systems.</p></div>
-        <div class="service-item"><h3>Mobile Applications</h3><p>Cross-platform apps with strong UX and performance.</p></div>
-        <div class="service-item"><h3>Digital Marketing</h3><p>SEO, paid ads and social media growth campaigns.</p></div>
-      </div></div>
-    </div>
-  </div>
-</section>
+
+<!-- page title area start  -->
+        <section class="page-title-area">
+          <div class="container large">
+            <div class="page-title-area-inner section-spacing-top">
+              <div class="page-title-wrapper">
+                <h2 class="page-title fade-anim">Expertise</h2>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- page title area end  -->
+
+        <!-- service area start  -->
+        <section class="service-area-service-page">
+          <div class="container large">
+            <div class="service-area-service-page-inner">
+              <div class="section-header fade-anim">
+                <div class="section-title-wrapper">
+                  <div class="subtitle-wrapper">
+                    <span class="section-subtitle">Capabilities</span>
+                  </div>
+                  <div class="title-wrapper">
+                    <h2 class="section-title font-sequelsans-romanbody">We think out of the
+                      box when it comes
+                      to creative</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="services-wrapper-box fade-anim">
+                <div class="services-wrapper-1">
+                  <div class="service-box fade-anim">
+                    <div class="count">
+                      <span class="number">(01)</span>
+                    </div>
+
+                    <div class="content">
+                      <h3 class="title"><a href="{{ route('front.services.show','details') }}">Branding</a></h3>
+                      <ul class="service-list">
+                        <li><a href="{{ route('front.services.show','details') }}">Creative Direction</a></li>
+                        <li><a href="{{ route('front.services.show','details') }}">Brand Identity</a></li>
+                        <li><a href="{{ route('front.services.show','details') }}">Branding Strategy</a></li>
+                        <li><a href="{{ route('front.services.show','details') }}">Graphic Design</a></li>
+                        <li><a href="{{ route('front.services.show','details') }}">Startup</a></li>
+                      </ul>
+                    </div>
+                    <div class="thumb">
+                      <img class="grow" src="assets/imgs/gallery/image-3.webp" alt="image">
+                    </div>
+                  </div>
+                  <div class="service-box fade-anim">
+                    <div class="count">
+                      <span class="number">(02)</span>
+                    </div>
+
+                    <div class="content">
+                      <h3 class="title"><a href="{{ route('front.services.show','details') }}">UI-UX Design</a></h3>
+                      <ul class="service-list">
+                        <li><a href="{{ route('front.services.show','details') }}">UI UX Consulting</a></li>
+                        <li><a href="{{ route('front.services.show','details') }}">UX Research</a></li>
+                        <li><a href="{{ route('front.services.show','details') }}">Usability Testing</a></li>
+                        <li><a href="{{ route('front.services.show','details') }}">Wireframing</a></li>
+                        <li><a href="{{ route('front.services.show','details') }}">Prototyping</a></li>
+                      </ul>
+                    </div>
+                    <div class="thumb">
+                      <img class="grow" src="assets/imgs/gallery/image-4.webp" alt="image">
+                    </div>
+                  </div>
+                  <div class="service-box fade-anim">
+                    <div class="count">
+                      <span class="number">(03)</span>
+                    </div>
+
+                    <div class="content">
+                      <h3 class="title"><a href="{{ route('front.services.show','details') }}">Development</a></h3>
+                      <ul class="service-list">
+                        <li><a href="{{ route('front.services.show','details') }}">WordPress</a></li>
+                        <li><a href="{{ route('front.services.show','details') }}">Webflow</a></li>
+                        <li><a href="{{ route('front.services.show','details') }}">Laravel Framework</a></li>
+                        <li><a href="{{ route('front.services.show','details') }}">React & Flutter</a></li>
+                        <li><a href="{{ route('front.services.show','details') }}">Design System</a></li>
+                      </ul>
+                    </div>
+                    <div class="thumb">
+                      <img class="grow" src="assets/imgs/gallery/image-5.webp" alt="image">
+                    </div>
+                  </div>
+                  <div class="service-box fade-anim">
+                    <div class="count">
+                      <span class="number">(04)</span>
+                    </div>
+
+                    <div class="content">
+                      <h3 class="title"><a href="{{ route('front.services.show','details') }}">Digital Marketing</a></h3>
+                      <ul class="service-list">
+                        <li><a href="{{ route('front.services.show','details') }}">Online Marketing</a></li>
+                        <li><a href="{{ route('front.services.show','details') }}">SEO-Marketing</a></li>
+                        <li><a href="{{ route('front.services.show','details') }}">Strategy</a></li>
+                        <li><a href="{{ route('front.services.show','details') }}">Market Research</a></li>
+                        <li><a href="{{ route('front.services.show','details') }}">Social Reform</a></li>
+                      </ul>
+                    </div>
+                    <div class="thumb">
+                      <img class="grow" src="assets/imgs/gallery/image-6.webp" alt="image">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="service-content-wrapper section-spacing-top">
+                <div class="service-content">
+                  <div class="section-info-wrapper fade-anim" data-direction="left">
+                    <div class="thumb parallax-view">
+                      <img src="assets/imgs/gallery/image-10.webp" alt="image" data-speed="0.9">
+                    </div>
+                    <div class="text-wrapper">
+                      <p class="text text-invert">A practical guide explaining how and why Redox should be part of
+                        every
+                        project to
+                        ensure its high quality and seamless user experience.</p>
+                      <p class="text text-invert">If you already understand ask to continue
+                        scrolling; otherwise, click the link below to explore more.</p>
+                    </div>
+                  </div>
+                  <div class="section-thumb-wrapper fade-anim" data-delay="0.45" data-direction="right">
+                    <div class="thumb parallax-view">
+                      <img src="assets/imgs/gallery/image-11.webp" alt="image" data-speed="0.8">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- service area end  -->
+
+        <!-- client area start  -->
+        <section class="client-area-service-page">
+          <div class="container large">
+            <div class="client-area-inner section-spacing-top">
+              <div class="section-content fade-anim">
+                <div class="section-title-wrapper">
+                  <div class="title-wrapper">
+                    <h2 class="section-title font-sequelsans-romanbody"><span>Client:</span> Helping brands to grow
+                      and say their success stories to
+                      the world.</h2>
+                  </div>
+                </div>
+                <div class="text-wrapper">
+                  <p class="text">We’re a great team of creatives with a strongest capabilities to helping progressive
+                    fields achieve their goals. With the best talent on every project done successfully</p>
+                </div>
+              </div>
+              <div class="client-capsule-wrapper-box fade-anim" data-t-throwable-scene="true">
+                <div class="client-capsule-wrapper">
+                  <p data-t-throwable-el="">
+                    <span class="client-box">
+                      <img src="assets/imgs/client/client-9.webp" alt="image">
+                    </span>
+                  </p>
+                  <p data-t-throwable-el="">
+                    <span class="client-box">
+                      <img src="assets/imgs/client/client-10.webp" alt="image">
+                    </span>
+                  </p>
+                  <p data-t-throwable-el="">
+                    <span class="client-box">
+                      <img src="assets/imgs/client/client-11.webp" alt="image">
+                    </span>
+                  </p>
+                  <p data-t-throwable-el="">
+                    <span class="client-box">
+                      <img src="assets/imgs/client/client-12.webp" alt="image">
+                    </span>
+                  </p>
+                  <p data-t-throwable-el="">
+                    <span class="client-box">
+                      <img src="assets/imgs/client/client-13.webp" alt="image">
+                    </span>
+                  </p>
+                  <p data-t-throwable-el="">
+                    <span class="client-box">
+                      <img src="assets/imgs/client/client-14.webp" alt="image">
+                    </span>
+                  </p>
+                  <p data-t-throwable-el="">
+                    <span class="client-box">
+                      <img src="assets/imgs/client/client-15.webp" alt="image">
+                    </span>
+                  </p>
+                  <p data-t-throwable-el="">
+                    <span class="client-box">
+                      <img src="assets/imgs/client/client-16.webp" alt="image">
+                    </span>
+                  </p>
+                  <p data-t-throwable-el="">
+                    <span class="client-box">
+                      <img src="assets/imgs/client/client-17.webp" alt="image">
+                    </span>
+                  </p>
+                  <p data-t-throwable-el="">
+                    <span class="client-box">
+                      <img src="assets/imgs/client/client-18.webp" alt="image">
+                    </span>
+                  </p>
+                  <p data-t-throwable-el="">
+                    <span class="client-box">
+                      <img src="assets/imgs/client/client-19.webp" alt="image">
+                    </span>
+                  </p>
+                  <p data-t-throwable-el="">
+                    <span class="client-box">
+                      <img src="assets/imgs/client/client-20.webp" alt="image">
+                    </span>
+                  </p>
+                  <p data-t-throwable-el="">
+                    <span class="client-box">
+                      <img src="assets/imgs/client/client-21.webp" alt="image">
+                    </span>
+                  </p>
+                  <p data-t-throwable-el="">
+                    <span class="client-box">
+                      <img src="assets/imgs/client/client-22.webp" alt="image">
+                    </span>
+                  </p>
+                </div>
+              </div>
+              <div class="lines-wrapper">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- client area end  -->
+
 @endsection
