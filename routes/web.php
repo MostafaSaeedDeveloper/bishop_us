@@ -20,10 +20,10 @@ Route::get('/contact', [PagesController::class, 'contact'])->name('front.contact
 
 Auth::routes();
 
-Route::middleware('auth')->prefix('admin')->name('admin.')->group(function (): void {
-    Route::get('/dashboard', DashboardController::class)->name('dashboard');
+Route::middleware('auth')->prefix('dashboard')->name('admin.')->group(function (): void {
+    Route::get('/', DashboardController::class)->name('dashboard');
     Route::resource('projects', AdminProjectController::class)->except(['show']);
     Route::resource('posts', AdminPostController::class)->except(['show']);
 });
 
-Route::get('/home', fn () => redirect()->route('admin.dashboard'))->middleware('auth')->name('home');
+Route::get('/home', fn () => redirect('/dashboard'))->middleware('auth')->name('home');
