@@ -10,7 +10,7 @@
   <title>Bishop Integrated Solutions</title>
 
   <!-- Fav Icon -->
-  <link rel="icon" type="image/x-icon" href="assets/imgs/logo/favicon.png">
+  <link rel="icon" type="image/x-icon" href="{{ asset('assets/imgs/logo/favicon.png') }}">
 
   <!-- Vendor CSS Files -->
   <link rel="stylesheet" href="{{asset('assets/vendor/bootstrap.min.css')}}">
@@ -30,7 +30,7 @@
 
   <!-- custom-cursor -->
   <div class="custom-cursor">
-    <img src="assets/imgs/cursor/cursor-2-xs.svg" alt="cursor" id="cursorImg">
+    <img src="{{ asset('assets/imgs/cursor/cursor-2-xs.svg') }}" alt="cursor" id="cursorImg">
   </div>
 
   <!-- Preloader -->
@@ -65,8 +65,8 @@
       <div class="side-info-content">
         <div class="offset-widget offset-header">
           <div class="offset-logo">
-            <a href="index.html">
-              <img src="assets/imgs/logo/logo-light.png" alt="site logo">
+            <a href="{{ route('front.home') }}">
+              <img src="{{ asset('assets/imgs/logo/logo-light.png') }}" alt="site logo">
             </a>
           </div>
           <button id="side-info-close" class="side-info-close">
@@ -75,7 +75,7 @@
         </div>
         <div class="mobile-menu d-xl-none fix"></div>
         <div class="offset-button">
-          <a href="contact.html" class="rr-btn hover-bg-theme">
+          <a href="{{ route('front.contact') }}" class="rr-btn hover-bg-theme">
             <span class="btn-wrap">
               <span class="text-one">Let's Talk</span>
               <span class="text-two">Let's Talk</span>
@@ -111,24 +111,24 @@
       <div class="container large">
         <div class="header-area__inner">
           <div class="header__logo">
-            <a href="index.html">
-              <img src="assets/imgs/logo/logo-light.png" class="normal-logo" alt="Site Logo">
+            <a href="{{ route('front.home') }}">
+              <img src="{{ asset('assets/imgs/logo/logo-light.png') }}" class="normal-logo" alt="Site Logo">
             </a>
           </div>
           <div class="header__nav">
             <nav class="main-menu">
               <ul>
-                <li><a href="contact.html">Home</a></li>
-                <li><a href="contact.html">About Us</a></li>
-                <li><a href="contact.html">Services</a></li>
-                <li><a href="contact.html">Projects</a></li>
-                <li><a href="contact.html">Blog</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="{{ route('front.home') }}">Home</a></li>
+                <li><a href="{{ route('front.about') }}">About Us</a></li>
+                <li><a href="{{ route('front.services.index') }}">Services</a></li>
+                <li><a href="{{ route('front.projects.index') }}">Projects</a></li>
+                <li><a href="{{ route('front.blog.index') }}">Blog</a></li>
+                <li><a href="{{ route('front.contact') }}">Contact Us</a></li>
               </ul>
             </nav>
           </div>
           <div class="header__button">
-            <a href="contact.html" class="rr-btn hover-bg-theme">
+            <a href="{{ route('front.contact') }}" class="rr-btn hover-bg-theme">
               <span class="btn-wrap">
                 <span class="text-one">Let’s Talk</span>
                 <span class="text-two">Let’s Talk</span>
@@ -144,4 +144,3 @@
     </div>
   </header>
     <!-- Header area end -->
-
