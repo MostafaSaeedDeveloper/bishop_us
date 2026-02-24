@@ -65,7 +65,7 @@
       <div class="side-info-content">
         <div class="offset-widget offset-header">
           <div class="offset-logo">
-            <a href="index.html">
+            <a href="{{ route('front.home') }}">
               <img src="assets/imgs/logo/logo-light.png" alt="site logo">
             </a>
           </div>
@@ -75,7 +75,7 @@
         </div>
         <div class="mobile-menu d-xl-none fix"></div>
         <div class="offset-button">
-          <a href="contact.html" class="rr-btn hover-bg-theme">
+          <a href="{{ route('front.contact') }}" class="rr-btn hover-bg-theme">
             <span class="btn-wrap">
               <span class="text-one">Let's Talk</span>
               <span class="text-two">Let's Talk</span>
@@ -111,24 +111,24 @@
       <div class="container large">
         <div class="header-area__inner">
           <div class="header__logo">
-            <a href="index.html">
+            <a href="{{ route('front.home') }}">
               <img src="assets/imgs/logo/logo-light.png" class="normal-logo" alt="Site Logo">
             </a>
           </div>
           <div class="header__nav">
             <nav class="main-menu">
               <ul>
-                <li><a href="contact.html">Home</a></li>
-                <li><a href="contact.html">About Us</a></li>
-                <li><a href="contact.html">Services</a></li>
-                <li><a href="contact.html">Projects</a></li>
-                <li><a href="contact.html">Blog</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="{{ route('front.home') }}">Home</a></li>
+                <li><a href="{{ route('front.about') }}">About Us</a></li>
+                <li><a href="{{ route('front.services') }}">Services</a></li>
+                <li><a href="{{ route('front.projects.index') }}">Projects</a></li>
+                <li><a href="{{ route('front.blog.index') }}">Blog</a></li>
+                <li><a href="{{ route('front.contact') }}">Contact Us</a></li>
               </ul>
             </nav>
           </div>
           <div class="header__button">
-            <a href="contact.html" class="rr-btn hover-bg-theme">
+            <a href="{{ route('front.contact') }}" class="rr-btn hover-bg-theme">
               <span class="btn-wrap">
                 <span class="text-one">Let’s Talk</span>
                 <span class="text-two">Let’s Talk</span>
