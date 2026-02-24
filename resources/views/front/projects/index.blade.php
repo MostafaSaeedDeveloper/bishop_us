@@ -1,202 +1,42 @@
 @extends('front.layout.master')
 
 @section('content')
+<section class="page-title-area">
+  <div class="container large">
+    <div class="page-title-area-inner section-spacing-top">
+      <div class="page-title-wrapper">
+        <h2 class="page-title fade-anim">Projects</h2>
+      </div>
+    </div>
+  </div>
+</section>
 
-<!-- page title area start  -->
-        <section class="page-title-area">
-          <div class="container large">
-            <div class="page-title-area-inner section-spacing-top">
-              <div class="page-title-wrapper">
-                <h2 class="page-title fade-anim">Portfolio</h2>
+<section class="blog-area-page">
+  <div class="container large">
+    <div class="blog-area-page-inner section-spacing-top">
+      <div class="blogs-wrapper-box">
+        <div class="blogs-wrapper">
+          @forelse($projects as $project)
+            <article class="blog-box fade-anim">
+              <div class="thumb">
+                <a href="{{ route('front.projects.show', $project) }}">
+                  <img src="{{ $project->featured_image ? asset('storage/'.$project->featured_image) : asset('assets/imgs/project/project-1.webp') }}" alt="{{ $project->title }}">
+                </a>
               </div>
-            </div>
-          </div>
-        </section>
-        <!-- page title area end  -->
-
-        <!-- work area start  -->
-        <section class="work-area-work-page">
-          <div class="work-area-work-page-inner">
-            <div class="container large">
-              <div class="section-header fade-anim">
-                <div class="section-title-wrapper">
-                  <div class="subtitle-wrapper">
-                    <span class="section-subtitle">Recent work</span>
-                  </div>
-                  <div class="title-wrapper">
-                    <h2 class="section-title font-sequelsans-romanbody">Creative works
-                      with our incredible
-                      people.</h2>
-                  </div>
-                </div>
+              <div class="content">
+                <h3 class="title"><a href="{{ route('front.projects.show', $project) }}">{{ $project->title }}</a></h3>
+                <ul class="meta">
+                  <li>{{ $project->service ?: 'General Service' }}</li>
+                  @if($project->client)<li>{{ $project->client }}</li>@endif
+                </ul>
               </div>
-              <div class="section-content-wrapper fade-anim">
-                <div class="info-list">
-                  <ul>
-                    <li>design</li>
-                    <li>Development</li>
-                    <li>Marketing</li>
-                    <li>Writing</li>
-                  </ul>
-                </div>
-                <div class="section-content">
-                  <div class="text-wrapper" data-direction="right">
-                    <p class="text">We take a comprehensive approach to the creation and development of brands. We
-                      help local companies and services enter the market, and well-known brands expand an audience.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-            <div class="works-wrapper-box">
-              <div class="container large">
-                <div class="works-wrapper-8">
-                  <div class="work-box">
-                    <div class="thumb">
-                      <div class="image scale" data-cursor-text="View Project">
-                        <a href="portfolio-details.html"><img src="assets/imgs/project/image-19.webp" alt="image"></a>
-                      </div>
-                    </div>
-                    <div class="content">
-                      <h3 class="title"><a href="portfolio-details.html">Harash Denmark</a></h3>
-                      <div class="meta">
-                        <span class="date">2010</span>
-                        <span class="tag">Branding</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="work-box">
-                    <div class="thumb">
-                      <div class="image scale" data-cursor-text="View Project">
-                        <a href="portfolio-details.html"><img src="assets/imgs/project/image-20.webp" alt="image"></a>
-                      </div>
-                    </div>
-                    <div class="content">
-                      <h3 class="title"><a href="portfolio-details.html">Saudi Lime Green</a></h3>
-                      <div class="meta">
-                        <span class="date">2010</span>
-                        <span class="tag">Marketing</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="work-box">
-                    <div class="thumb">
-                      <div class="image scale" data-cursor-text="View Project">
-                        <a href="portfolio-details.html"><img src="assets/imgs/project/image-21.webp" alt="image"></a>
-                      </div>
-                    </div>
-                    <div class="content">
-                      <h3 class="title"><a href="portfolio-details.html">Saudi Venture Capital</a></h3>
-                      <div class="meta">
-                        <span class="date">2010</span>
-                        <span class="tag">Marketing</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="work-box">
-                    <div class="thumb">
-                      <div class="image scale" data-cursor-text="View Project">
-                        <a href="portfolio-details.html"><img src="assets/imgs/project/image-22.webp" alt="image"></a>
-                      </div>
-                    </div>
-                    <div class="content">
-                      <h3 class="title"><a href="portfolio-details.html">Nilachal Network</a></h3>
-                      <div class="meta">
-                        <span class="date">2010</span>
-                        <span class="tag">Marketing</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="work-box">
-                    <div class="thumb">
-                      <div class="image scale" data-cursor-text="View Project">
-                        <a href="portfolio-details.html"><img src="assets/imgs/project/image-23.webp" alt="image"></a>
-                      </div>
-                    </div>
-                    <div class="content">
-                      <h3 class="title"><a href="portfolio-details.html">Royal Cash App </a></h3>
-                      <div class="meta">
-                        <span class="date">2010</span>
-                        <span class="tag">Design</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="work-box">
-                    <div class="thumb">
-                      <div class="image scale" data-cursor-text="View Project">
-                        <a href="portfolio-details.html"><img src="assets/imgs/project/image-24.webp" alt="image"></a>
-                      </div>
-                    </div>
-                    <div class="content">
-                      <h3 class="title"><a href="portfolio-details.html">Mashup Gradient</a></h3>
-                      <div class="meta">
-                        <span class="date">2010</span>
-                        <span class="tag">Design</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="work-box">
-                    <div class="thumb">
-                      <div class="image scale" data-cursor-text="View Project">
-                        <a href="portfolio-details.html"><img src="assets/imgs/project/image-25.webp" alt="image"></a>
-                      </div>
-                    </div>
-                    <div class="content">
-                      <h3 class="title"><a href="portfolio-details.html">House of Shapes</a></h3>
-                      <div class="meta">
-                        <span class="date">2010</span>
-                        <span class="tag">Marketing</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="work-box">
-                    <div class="thumb">
-                      <div class="image scale" data-cursor-text="View Project">
-                        <a href="portfolio-details.html"><img src="assets/imgs/project/image-26.webp" alt="image"></a>
-                      </div>
-                    </div>
-                    <div class="content">
-                      <h3 class="title"><a href="portfolio-details.html">Ocean Harmony</a></h3>
-                      <div class="meta">
-                        <span class="date">2010</span>
-                        <span class="tag">Branding</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="work-box">
-                    <div class="thumb">
-                      <div class="image scale" data-cursor-text="View Project">
-                        <a href="portfolio-details.html"><img src="assets/imgs/project/image-27.webp" alt="image"></a>
-                      </div>
-                    </div>
-                    <div class="content">
-                      <h3 class="title"><a href="portfolio-details.html">Wave Coxsheet</a></h3>
-                      <div class="meta">
-                        <span class="date">2010</span>
-                        <span class="tag">Design</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="work-box">
-                    <div class="thumb">
-                      <div class="image scale" data-cursor-text="View Project">
-                        <a href="portfolio-details.html"><img src="assets/imgs/project/image-28.webp" alt="image"></a>
-                      </div>
-                    </div>
-                    <div class="content">
-                      <h3 class="title"><a href="portfolio-details.html">Padro Alex Garoat</a></h3>
-                      <div class="meta">
-                        <span class="date">2010</span>
-                        <span class="tag">Branding</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- work area end  -->
-
+            </article>
+          @empty
+            <p>No projects added yet.</p>
+          @endforelse
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 @endsection
