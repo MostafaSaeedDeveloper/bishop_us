@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
+use Illuminate\Support\Str;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
 use Spatie\MediaLibrary\MediaCollections\Models\Media;
@@ -38,7 +39,18 @@ class Project extends Model implements HasMedia
 
     public function featuredImageUrl(): ?string
     {
-        return $this->getFirstMediaUrl('featured_image') ?: null;
+        $mediaUrl = $this->getFirstMediaUrl('featured_image');
+        if ($mediaUrl) {
+            return $mediaUrl;
+        }
+
+        if (! $this->featured_image) {
+            return null;
+        }
+
+        return Str::startsWith($this->featured_image, ['http://', 'https://', '//'])
+            ? $this->featured_image
+            : asset($this->featured_image);
     }
 
     public function galleryMedia(): MorphMany
