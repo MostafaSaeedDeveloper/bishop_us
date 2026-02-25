@@ -64,3 +64,76 @@
         </div>
       </footer>
       <!-- footer area end  -->
+
+
+      <a href="https://wa.me/201555665776"
+         class="floating-whatsapp-footer"
+         target="_blank"
+         rel="noopener"
+         aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+
+      <style>
+        .floating-whatsapp-footer {
+          position: fixed;
+          right: 20px;
+          bottom: 90px;
+          height: 46px;
+          width: 46px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50px;
+          z-index: 999;
+          opacity: 0;
+          visibility: hidden;
+          transform: translateY(-100px);
+          transition: all 300ms linear;
+        }
+
+        .floating-whatsapp-footer.active-progress {
+          opacity: 1;
+          visibility: visible;
+          transform: translateY(0);
+          mix-blend-mode: normal;
+          background-color: #25D366;
+        }
+
+        .floating-whatsapp-footer i {
+          font-size: 20px;
+          color: #ffffff;
+          transition: all 200ms linear;
+        }
+
+        .dark .floating-whatsapp-footer i {
+          color: #ffffff;
+        }
+
+        @media (max-width: 767px) {
+          .floating-whatsapp-footer {
+            right: 16px;
+            bottom: 84px;
+          }
+        }
+      </style>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          var whatsappButton = document.querySelector('.floating-whatsapp-footer');
+          var progressWrap = document.querySelector('.progress-wrap');
+
+          if (!whatsappButton || !progressWrap) {
+            return;
+          }
+
+          var syncWhatsappState = function () {
+            whatsappButton.classList.toggle('active-progress', progressWrap.classList.contains('active-progress'));
+          };
+
+          syncWhatsappState();
+
+          var observer = new MutationObserver(syncWhatsappState);
+          observer.observe(progressWrap, { attributes: true, attributeFilter: ['class'] });
+        });
+      </script>
