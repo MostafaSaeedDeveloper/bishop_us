@@ -307,8 +307,8 @@
               <div class="section-header section-spacing-top pin-element">
                 <div class="section-title-wrapper">
                   <div class="title-wrapper">
-                    <h2 class="section-title font-instrumentsans-medium word-anim">BISHOP <br>
-                      BENEFITS</h2>
+                    <h2 class="section-title font-instrumentsans-medium word-anim">WHY <br>
+                      CHOOSE US?</h2>
                   </div>
                 </div>
               </div>
@@ -319,29 +319,16 @@
                 <span class="line-4"></span>
                 <div class="funfact-wrapper">
                   <div class="funfact-item go-visible">
-                    <span class="number">10+</span>
-                    <p class="text">Years of hands-on experience in web development,
-                      hosting, and digital marketing.</p>
+                    <span class="number">Creativity and Innovation</span>
+                    <p class="text">We do not believe in one-size-fits-all. Our solutions are customized to your business needs.</p>
                   </div>
                   <div class="funfact-item go-visible">
-                    <span class="number">24/7</span>
-                    <p class="text">Technical support team ready to serve your business
-                      at any time.</p>
+                    <span class="number">Experienced Team</span>
+                    <p class="text">We have professionals with experience on our team. Each project benefits from their expertise and enthusiasm.</p>
                   </div>
                   <div class="funfact-item go-visible">
-                    <span class="number">100%</span>
-                    <p class="text">Customized strategies tailored to your business goals,
-                      not one-size-fits-all packages.</p>
-                  </div>
-                  <div class="funfact-item go-visible">
-                    <span class="number">Data</span>
-                    <p class="text">Data-driven optimization across SEO, paid campaigns,
-                      and conversion-focused execution.</p>
-                  </div>
-                  <div class="funfact-item go-visible">
-                    <span class="number">Quality</span>
-                    <p class="text">Quality-first delivery process to ensure every project
-                      meets high standards.</p>
+                    <span class="number">Competitive Pricing</span>
+                    <p class="text">We take quality seriously. It is essential to our workflow, ensuring high-quality deliverables.</p>
                   </div>
                 </div>
               </div>
