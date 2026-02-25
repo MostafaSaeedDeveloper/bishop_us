@@ -9,37 +9,32 @@
           <div class="container large">
             <div class="hero-area-service-details-inner section-spacing-top">
               <div class="service-meta fade-anim">
-                <span class="serial">[SL: 005]</span>
-                <span class="tag">[Brand Guideline]</span>
-                <span class="next-item"><a href="service-details.html">[Next]</a></span>
+                <span class="serial">[SL: {{ $service['serial'] }}]</span>
+                <span class="tag">[{{ $service['tag'] }}]</span>
+                <span class="next-item"><a href="{{ route('front.services.show', $nextService['slug']) }}">[Next: {{ $nextService['title'] }}]</a></span>
               </div>
               <div class="section-header fade-anim">
                 <div class="section-title-wrapper">
                   <div class="title-wrapper">
-                    <h2 class="section-title font-sequelsans-romanbody">Brand <br>
-                      Guideline</h2>
+                    <h2 class="section-title font-sequelsans-romanbody">{{ $service['title'] }}</h2>
                   </div>
                 </div>
               </div>
               <div class="section-content-wrapper fade-anim">
                 <div class="section-content">
                   <div class="text-wrapper">
-                    <p class="text">You'll need to provide your brand information, and starting history to visualize
-                      identity. We speak fluent branding, as we apply a solid base understanding to everything we do
-                      in thought and action.</p>
+                    <p class="text">{{ $service['summary'] }}</p>
                   </div>
                   <div class="feature-list">
                     <ul>
-                      <li>Strategy</li>
-                      <li>Brand Identity</li>
-                      <li>Communication</li>
-                      <li>Research</li>
-                      <li>Consultation</li>
+                      @foreach ($service['features'] as $feature)
+                        <li>{{ $feature }}</li>
+                      @endforeach
                     </ul>
                   </div>
                 </div>
                 <div class="section-thumb parallax-view">
-                  <img src="assets/imgs/gallery/image-24.webp" alt="image" data-speed="0.8">
+                  <img src="{{ asset($service['image']) }}" alt="{{ $service['title'] }}" data-speed="0.8">
                 </div>
               </div>
             </div>
@@ -55,13 +50,10 @@
                 <div class="section-title-wrapper">
                   <div class="subtitle-wrapper fade-anim" data-direction="left">
                     <span class="section-subtitle">Our comprehensive <br>
-                      design process</span>
+                      delivery process</span>
                   </div>
                   <div class="title-wrapper fade-anim" data-direction="right">
-                    <h2 class="section-title font-sequelsans-romanbody">Whether you’re a startup or industry star,
-                      we’re here to promote your brand by
-                      creative research and real human centred
-                      design.</h2>
+                    <h2 class="section-title font-sequelsans-romanbody">Our {{ $service['title'] }} service is built around strategy, execution, and measurable results.</h2>
                   </div>
                 </div>
               </div>
