@@ -15,6 +15,7 @@
   <!-- Vendor CSS Files -->
   <link rel="stylesheet" href="{{asset('assets/vendor/bootstrap.min.css')}}">
   <link rel="stylesheet" href="{{asset('assets/vendor/fontawesome.min.css')}}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="{{asset('assets/vendor/swiper-bundle.min.css')}}">
   <link rel="stylesheet" href="{{asset('assets/vendor/meanmenu.min.css')}}">
   <link rel="stylesheet" href="{{asset('assets/vendor/magnific-popup.css')}}">

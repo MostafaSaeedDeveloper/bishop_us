@@ -28,26 +28,64 @@
 <style>
   .floating-whatsapp {
     position: fixed;
-    right: 24px;
-    bottom: 24px;
-    width: 56px;
-    height: 56px;
+    right: 20px;
+    bottom: 86px;
+    width: 52px;
+    height: 52px;
     border-radius: 50%;
     background: #25d366;
     color: #fff;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-size: 30px;
+    font-size: 28px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    z-index: 9999;
+    z-index: 100;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    animation: whatsapp-float 2.2s ease-in-out infinite;
   }
 
   .floating-whatsapp:hover {
-    transform: translateY(-2px);
+    transform: translateY(-3px);
     box-shadow: 0 14px 30px rgba(0, 0, 0, 0.35);
     color: #fff;
+  }
+
+  .progress-wrap {
+    left: 20px;
+    right: auto;
+    z-index: 100;
+  }
+
+  .progress-wrap::after {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f062";
+  }
+
+  @media (max-width: 767px) {
+    .floating-whatsapp {
+      right: 16px;
+      bottom: 82px;
+      width: 48px;
+      height: 48px;
+      font-size: 24px;
+    }
+
+    .progress-wrap {
+      left: 16px;
+    }
+  }
+
+  @keyframes whatsapp-float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-5px);
+    }
   }
 </style>
 
