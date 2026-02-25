@@ -24,7 +24,7 @@
                     <span class="section-subtitle">What We're Offering</span>
                   </div>
                   <div class="title-wrapper">
-                    <h2 class="section-title font-sequelsans-romanbody">Bishop Integrated Solutions is specialized in website development, ecommerce, digital marketing, and SEO services.</h2>
+                    <h2 class="font-sequelsans-romanbody">Bishop Integrated Solutions is specialized in website development, ecommerce, digital marketing, and SEO services.</h2>
                   </div>
                 </div>
               </div>
