@@ -2,12 +2,21 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Project;
+
 class PagesController extends Controller
 {
     public function home()
     {
+        $featuredProjects = Project::query()
+            ->where('status', 'published')
+            ->latest()
+            ->take(6)
+            ->get();
+
         return view('front.index', [
             'services' => $this->services(),
+            'featuredProjects' => $featuredProjects,
         ]);
     }
 

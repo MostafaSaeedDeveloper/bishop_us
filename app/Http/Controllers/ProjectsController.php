@@ -26,6 +26,30 @@ class ProjectsController extends Controller
     {
         $project->load('media');
 
+        $previousProject = Project::query()
+            ->where('status', 'published')
+            ->where('id', '<', $project->id)
+            ->latest('id')
+            ->first();
+
+        $nextProject = Project::query()
+            ->where('status', 'published')
+            ->where('id', '>', $project->id)
+            ->oldest('id')
+            ->first();
+
+        $previousProject ??= Project::query()
+            ->where('status', 'published')
+            ->where('id', '!=', $project->id)
+            ->latest('id')
+            ->first();
+
+        $nextProject ??= Project::query()
+            ->where('status', 'published')
+            ->where('id', '!=', $project->id)
+            ->oldest('id')
+            ->first();
+
         $similarProjects = Project::query()
             ->where('id', '!=', $project->id)
             ->when($project->category, fn ($query) => $query->where('category', $project->category))
@@ -34,7 +58,7 @@ class ProjectsController extends Controller
             ->take(3)
             ->get();
 
-        return view('front.projects.show', compact('project', 'similarProjects'));
+        return view('front.projects.show', compact('project', 'similarProjects', 'previousProject', 'nextProject'));
     }
 
     public function dashboard(): View
