@@ -85,7 +85,7 @@
           align-items: center;
           justify-content: center;
           border-radius: 50px;
-          z-index: 99;
+          z-index: 999;
           opacity: 0;
           visibility: hidden;
           transform: translateY(-100px);
@@ -96,18 +96,18 @@
           opacity: 1;
           visibility: visible;
           transform: translateY(0);
-          mix-blend-mode: exclusion;
-          background-color: var(--black);
+          mix-blend-mode: normal;
+          background-color: #25D366;
         }
 
         .floating-whatsapp-footer i {
           font-size: 20px;
-          color: var(--primary);
+          color: #ffffff;
           transition: all 200ms linear;
         }
 
         .dark .floating-whatsapp-footer i {
-          color: var(--black);
+          color: #ffffff;
         }
 
         @media (max-width: 767px) {
