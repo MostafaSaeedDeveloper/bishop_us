@@ -36,17 +36,11 @@
     align-items: center;
     justify-content: center;
     border-radius: 50px;
-    z-index: 99;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-100px);
-    transition: all 300ms linear;
-  }
-
-  .floating-whatsapp.active-progress {
+    z-index: 999;
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
+    transition: all 300ms linear;
     mix-blend-mode: exclusion;
     background-color: var(--black);
   }
@@ -84,26 +78,6 @@
     }
   }
 </style>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    var whatsappButton = document.querySelector('.floating-whatsapp');
-    var progressWrap = document.querySelector('.progress-wrap');
-
-    if (!whatsappButton || !progressWrap) {
-      return;
-    }
-
-    var syncWhatsappState = function () {
-      whatsappButton.classList.toggle('active-progress', progressWrap.classList.contains('active-progress'));
-    };
-
-    syncWhatsappState();
-
-    var observer = new MutationObserver(syncWhatsappState);
-    observer.observe(progressWrap, { attributes: true, attributeFilter: ['class'] });
-  });
-</script>
 
   <!-- Vendor JS Files -->
   <script src="{{asset('assets/vendor/jquery-3.7.1.min.js')}}"></script>
