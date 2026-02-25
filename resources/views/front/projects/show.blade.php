@@ -2,13 +2,16 @@
 
 @section('content')
   <!-- work details area start  -->
+  @php
+    $primaryImage = $project->primaryImageUrl() ?: asset('assets/imgs/gallery/image-26.webp');
+  @endphp
   <section class="work-details-area">
     <div class="work-details-area-inner section-spacing">
       <div class="container large">
         <div class="section-header fade-anim">
           <div class="section-title-wrapper">
             <div class="title-thumb">
-              <img src="{{ $project->featuredImageUrl() ?: asset('assets/imgs/gallery/image-26.webp') }}" alt="{{ $project->name }}">
+              <img src="{{ $primaryImage }}" alt="{{ $project->name }}">
             </div>
             <div class="title-wrapper">
               <h2 class="section-title font-sequelsans-romanbody">{{ $project->name }}</h2>
@@ -35,7 +38,7 @@
         </div>
       </div>
       <div class="image-wrapper parallax-view fade-anim">
-        <img class="w-100" src="{{ $project->featuredImageUrl() ?: asset('assets/imgs/gallery/image-27.webp') }}" alt="{{ $project->name }}" data-speed="0.8">
+        <img class="w-100" src="{{ $primaryImage }}" alt="{{ $project->name }}" data-speed="0.8">
       </div>
       <div class="container large">
         <div class="section-info fade-anim">
@@ -67,7 +70,7 @@
           </div>
         @empty
           <div class="image parallax-view">
-            <img src="{{ $project->featuredImageUrl() ?: asset('assets/imgs/gallery/image-28.webp') }}" alt="{{ $project->name }}" data-speed="0.8">
+            <img src="{{ $primaryImage }}" alt="{{ $project->name }}" data-speed="0.8">
           </div>
         @endforelse
       </div>
@@ -86,7 +89,7 @@
       @if($similarProjects->isNotEmpty())
         <div class="gallery-wrapper-2 fade-anim">
           <div class="image parallax-view">
-            <img src="{{ $similarProjects->first()->featuredImageUrl() ?: asset('assets/imgs/gallery/image-34.webp') }}" alt="{{ $similarProjects->first()->name }}" data-speed="0.8">
+            <img src="{{ $similarProjects->first()->primaryImageUrl() ?: asset('assets/imgs/gallery/image-34.webp') }}" alt="{{ $similarProjects->first()->name }}" data-speed="0.8">
           </div>
         </div>
       @endif

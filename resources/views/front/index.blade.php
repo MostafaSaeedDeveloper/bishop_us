@@ -129,7 +129,7 @@
                     <div class="work-box">
                       <div class="thumb">
                         <div class="image scale" data-cursor-text="View Project">
-                          <a href="{{ route('front.projects.show', $project) }}"><img src="{{ $project->featuredImageUrl() ?: asset('assets/imgs/project/image-1.webp') }}" alt="{{ $project->name }}"></a>
+                          <a href="{{ route('front.projects.show', $project) }}"><img src="{{ $project->primaryImageUrl() ?: asset('assets/imgs/project/image-1.webp') }}" alt="{{ $project->name }}"></a>
                         </div>
                       </div>
                       <div class="content">

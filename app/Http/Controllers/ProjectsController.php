@@ -17,7 +17,7 @@ class ProjectsController extends Controller
 {
     public function frontIndex(): View
     {
-        $projects = Project::query()->where('status', 'published')->latest()->paginate(9);
+        $projects = Project::query()->with('media')->where('status', 'published')->latest()->paginate(9);
 
         return view('front.projects.index', compact('projects'));
     }
@@ -51,6 +51,7 @@ class ProjectsController extends Controller
             ->first();
 
         $similarProjects = Project::query()
+            ->with('media')
             ->where('id', '!=', $project->id)
             ->when($project->category, fn ($query) => $query->where('category', $project->category))
             ->where('status', 'published')

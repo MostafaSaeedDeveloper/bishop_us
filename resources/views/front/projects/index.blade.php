@@ -18,7 +18,7 @@
             <div class="thumb">
               <div class="image scale" data-cursor-text="View Project">
                 <a href="{{ route('front.projects.show', $project) }}">
-                  <img src="{{ $project->featuredImageUrl() ?: asset('assets/imgs/project/image-19.webp') }}" alt="{{ $project->name }}">
+                  <img src="{{ $project->primaryImageUrl() ?: asset('assets/imgs/project/image-19.webp') }}" alt="{{ $project->name }}">
                 </a>
               </div>
             </div>
@@ -34,7 +34,23 @@
           <p>No projects available.</p>
         @endforelse
       </div>
-      <div class="mt-4">{{ $projects->links() }}</div>
+      @if($projects->hasPages())
+        <div class="pagination fade-anim mt-4">
+            @if($projects->onFirstPage())
+              <span>Prev</span>
+            @else
+              <a href="{{ $projects->previousPageUrl() }}">Prev</a>
+            @endif
+
+            <span>Page {{ $projects->currentPage() }} of {{ $projects->lastPage() }}</span>
+
+            @if($projects->hasMorePages())
+              <a href="{{ $projects->nextPageUrl() }}">Next</a>
+            @else
+              <span>Next</span>
+            @endif
+        </div>
+      @endif
     </div>
   </div>
 </section>

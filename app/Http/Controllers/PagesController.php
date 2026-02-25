@@ -9,6 +9,7 @@ class PagesController extends Controller
     public function home()
     {
         $featuredProjects = Project::query()
+            ->with('media')
             ->where('status', 'published')
             ->latest()
             ->take(6)

@@ -37,6 +37,16 @@ class Project extends Model implements HasMedia
         return 'slug';
     }
 
+    public function primaryImageUrl(): ?string
+    {
+        $galleryImageUrl = $this->getFirstMediaUrl('gallery_images');
+        if ($galleryImageUrl) {
+            return $galleryImageUrl;
+        }
+
+        return $this->featuredImageUrl();
+    }
+
     public function featuredImageUrl(): ?string
     {
         $mediaUrl = $this->getFirstMediaUrl('featured_image');

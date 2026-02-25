@@ -87,7 +87,7 @@
       </div>
 
       <div class="mt-3">
-        {{ $projects->links() }}
+        {{ $projects->links('pagination::bootstrap-5') }}
       </div>
     </div>
   </div>
