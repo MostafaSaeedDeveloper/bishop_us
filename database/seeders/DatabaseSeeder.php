@@ -21,5 +21,7 @@ class DatabaseSeeder extends Seeder
                 'password' => Hash::make('Bishop@2030'),
             ]
         );
+
+        $this->call(ProjectsFromBishopSeeder::class);
     }
 }
