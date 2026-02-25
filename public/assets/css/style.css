@@ -4666,10 +4666,10 @@ video.video-area {
   object-fit: contain;
 }
 .client-area .client-box:not(.bg-theme) img {
-  filter: contrast(1.2) saturate(1.15);
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.45));
 }
 .client-area .client-box.bg-theme img {
-  filter: contrast(1.05) saturate(1.05);
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.25));
 }
 .client-area .line {
   border-bottom: 1px solid var(--primary);
@@ -15491,10 +15491,10 @@ video.video-area {
   object-fit: contain;
 }
 .client-area-service-page .client-box:not(.bg-theme) img {
-  filter: contrast(1.2) saturate(1.15);
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.45));
 }
 .client-area-service-page .client-box.bg-theme img {
-  filter: contrast(1.05) saturate(1.05);
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.25));
 }
 .client-area-service-page .line {
   border-bottom: 1px solid var(--primary);
