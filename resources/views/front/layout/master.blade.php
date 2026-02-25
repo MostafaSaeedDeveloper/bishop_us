@@ -12,17 +12,16 @@
 
       @include('front.layout.footer')
 
-      <a href="https://wa.me/201555665776"
-         class="floating-whatsapp"
-         target="_blank"
-         rel="noopener"
-         aria-label="WhatsApp">
-        <i class="fa-brands fa-whatsapp"></i>
-      </a>
-
     </div>
   </div>
 
+  <a href="https://wa.me/201555665776"
+     class="floating-whatsapp"
+     target="_blank"
+     rel="noopener"
+     aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
 
 
 <style>
