@@ -30,35 +30,26 @@
     position: fixed;
     right: 20px;
     bottom: 20px;
-    height: 46px;
-    width: 46px;
+    height: 56px;
+    width: 56px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50px;
-    z-index: 99;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-100px);
-    transition: all 300ms linear;
-  }
-
-  .floating-whatsapp.active-progress {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-    mix-blend-mode: exclusion;
-    background-color: var(--black);
+    border-radius: 50%;
+    z-index: 100;
+    background-color: #25d366;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
   }
 
   .floating-whatsapp i {
-    font-size: 20px;
-    color: var(--primary);
-    transition: all 200ms linear;
+    font-size: 30px;
+    color: #fff;
   }
 
-  .dark .floating-whatsapp i {
-    color: var(--black);
+  .floating-whatsapp:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.25);
   }
 
   .progress-wrap {
@@ -84,26 +75,6 @@
     }
   }
 </style>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    var whatsappButton = document.querySelector('.floating-whatsapp');
-    var progressWrap = document.querySelector('.progress-wrap');
-
-    if (!whatsappButton || !progressWrap) {
-      return;
-    }
-
-    var syncWhatsappState = function () {
-      whatsappButton.classList.toggle('active-progress', progressWrap.classList.contains('active-progress'));
-    };
-
-    syncWhatsappState();
-
-    var observer = new MutationObserver(syncWhatsappState);
-    observer.observe(progressWrap, { attributes: true, attributeFilter: ['class'] });
-  });
-</script>
 
   <!-- Vendor JS Files -->
   <script src="{{asset('assets/vendor/jquery-3.7.1.min.js')}}"></script>
