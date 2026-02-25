@@ -261,27 +261,27 @@
               <div class="client-capsule-wrapper-box" data-t-throwable-scene="true">
                 <div class="client-capsule-wrapper">
                   <p data-t-throwable-el="">
-                    <span class="client-box bg-theme">
+                    <span class="client-box">
                       <img src="{{ asset('assets/clients/client_1-1-1.png') }}" alt="Client logo">
                     </span>
                   </p>
                   <p data-t-throwable-el="">
-                    <span class="client-box">
+                    <span class="client-box bg-theme">
                       <img src="{{ asset('assets/clients/client_3-1.png') }}" alt="Client logo">
                     </span>
                   </p>
                   <p data-t-throwable-el="">
-                    <span class="client-box">
+                    <span class="client-box bg-theme">
                       <img src="{{ asset('assets/clients/client_10-1.png') }}" alt="Client logo">
                     </span>
                   </p>
                   <p data-t-throwable-el="">
-                    <span class="client-box bg-theme">
+                    <span class="client-box">
                       <img src="{{ asset('assets/clients/client_12-1.png') }}" alt="Client logo">
                     </span>
                   </p>
                   <p data-t-throwable-el="">
-                    <span class="client-box">
+                    <span class="client-box bg-theme">
                       <img src="{{ asset('assets/clients/client_14-1.png') }}" alt="Client logo">
                     </span>
                   </p>
@@ -291,32 +291,32 @@
                     </span>
                   </p>
                   <p data-t-throwable-el="">
-                    <span class="client-box bg-theme">
+                    <span class="client-box">
                       <img src="{{ asset('assets/clients/client_17-1.png') }}" alt="Client logo">
                     </span>
                   </p>
                   <p data-t-throwable-el="">
-                    <span class="client-box bg-theme">
+                    <span class="client-box">
                       <img src="{{ asset('assets/clients/client_18-1.png') }}" alt="Client logo">
                     </span>
                   </p>
                   <p data-t-throwable-el="">
-                    <span class="client-box">
+                    <span class="client-box bg-theme">
                       <img src="{{ asset('assets/clients/client_19-1.png') }}" alt="Client logo">
                     </span>
                   </p>
                   <p data-t-throwable-el="">
-                    <span class="client-box bg-theme">
+                    <span class="client-box">
                       <img src="{{ asset('assets/clients/client_25-1.png') }}" alt="Client logo">
                     </span>
                   </p>
                   <p data-t-throwable-el="">
-                    <span class="client-box">
+                    <span class="client-box bg-theme">
                       <img src="{{ asset('assets/clients/client_27-1-1.png') }}" alt="Client logo">
                     </span>
                   </p>
                   <p data-t-throwable-el="">
-                    <span class="client-box bg-theme">
+                    <span class="client-box">
                       <img src="{{ asset('assets/clients/client_28-1.png') }}" alt="Client logo">
                     </span>
                   </p>
@@ -326,7 +326,7 @@
                     </span>
                   </p>
                   <p data-t-throwable-el="">
-                    <span class="client-box">
+                    <span class="client-box bg-theme">
                       <img src="{{ asset('assets/clients/United-1-1.png') }}" alt="Client logo">
                     </span>
                   </p>
