@@ -27,14 +27,14 @@
 
     <!-- Stylesheets -->
     <!-- Dashmix framework -->
-    <link rel="stylesheet" id="css-main" href="admin/assets/css/dashmix.min.css">
+    <link rel="stylesheet" id="css-main" href="{{asset('admin/assets/css/dashmix.min.css')}}">
 
     <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
     <!-- <link rel="stylesheet" id="css-theme" href="admin/assets/css/themes/xwork.min.css"> -->
     <!-- END Stylesheets -->
 
     <!-- Load and set color theme + dark mode preference (blocking script to prevent flashing) -->
-    <script src="admin/assets/js/setTheme.js"></script>
+    <script src="{{asset('admin/assets/js/setTheme.js')}}"></script>
   </head>
 
   <body>
@@ -761,12 +761,12 @@
       Core libraries and functionality
       webpack is putting everything together at admin/assets/_js/main/app.js
     -->
-    <script src="admin/assets/js/dashmix.app.min.js"></script>
+    <script src="{{asset('admin/assets/js/dashmix.app.min.js')}}"></script>
 
     <!-- Page JS Plugins -->
-    <script src="admin/assets/js/plugins/chart.js/chart.umd.js"></script>
+    <script src="{{asset('admin/assets/js/plugins/chart.js/chart.umd.js')}}"></script>
 
     <!-- Page JS Code -->
-    <script src="admin/assets/js/pages/be_pages_dashboard.min.js"></script>
+    <script src="{{asset('admin/assets/js/pages/be_pages_dashboard.min.js')}}"></script>
   </body>
 </html>
