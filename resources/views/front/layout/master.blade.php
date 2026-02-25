@@ -88,21 +88,20 @@
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     var whatsappButton = document.querySelector('.floating-whatsapp');
+    var progressWrap = document.querySelector('.progress-wrap');
 
-    if (!whatsappButton) {
+    if (!whatsappButton || !progressWrap) {
       return;
     }
 
-    var toggleWhatsapp = function () {
-      if (window.scrollY > 50) {
-        whatsappButton.classList.add('active-progress');
-      } else {
-        whatsappButton.classList.remove('active-progress');
-      }
+    var syncWhatsappState = function () {
+      whatsappButton.classList.toggle('active-progress', progressWrap.classList.contains('active-progress'));
     };
 
-    toggleWhatsapp();
-    window.addEventListener('scroll', toggleWhatsapp, { passive: true });
+    syncWhatsappState();
+
+    var observer = new MutationObserver(syncWhatsappState);
+    observer.observe(progressWrap, { attributes: true, attributeFilter: ['class'] });
   });
 </script>
 
