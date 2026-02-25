@@ -7,7 +7,7 @@
           <div class="container large">
             <div class="page-title-area-inner section-spacing-top">
               <div class="page-title-wrapper">
-                <h2 class="page-title fade-anim">Expertise</h2>
+                <h2 class="page-title fade-anim">Our Services</h2>
               </div>
             </div>
           </div>
@@ -21,12 +21,10 @@
               <div class="section-header fade-anim">
                 <div class="section-title-wrapper">
                   <div class="subtitle-wrapper">
-                    <span class="section-subtitle">Capabilities</span>
+                    <span class="section-subtitle">What We're Offering</span>
                   </div>
                   <div class="title-wrapper">
-                    <h2 class="section-title font-sequelsans-romanbody">We think out of the
-                      box when it comes
-                      to creative</h2>
+                    <h2 class="section-title font-sequelsans-romanbody">Bishop Integrated Solutions is specialized in website development, ecommerce, digital marketing, and SEO services.</h2>
                   </div>
                 </div>
               </div>
@@ -60,12 +58,8 @@
                       <img src="assets/imgs/gallery/image-10.webp" alt="image" data-speed="0.9">
                     </div>
                     <div class="text-wrapper">
-                      <p class="text text-invert">A practical guide explaining how and why Redox should be part of
-                        every
-                        project to
-                        ensure its high quality and seamless user experience.</p>
-                      <p class="text text-invert">If you already understand ask to continue
-                        scrolling; otherwise, click the link below to explore more.</p>
+                      <p class="text text-invert">We build practical digital solutions that match your business goals, strengthen your online presence, and deliver measurable growth.</p>
+                      <p class="text text-invert">From planning to launch and optimization, our team focuses on quality, performance, and long-term value for every project.</p>
                     </div>
                   </div>
                   <div class="section-thumb-wrapper fade-anim" data-delay="0.45" data-direction="right">
@@ -87,14 +81,11 @@
               <div class="section-content fade-anim">
                 <div class="section-title-wrapper">
                   <div class="title-wrapper">
-                    <h2 class="section-title font-sequelsans-romanbody"><span>Client:</span> Helping brands to grow
-                      and say their success stories to
-                      the world.</h2>
+                    <h2 class="section-title font-sequelsans-romanbody"><span>Our Clients:</span> Helping brands grow and share their success stories with confidence.</h2>
                   </div>
                 </div>
                 <div class="text-wrapper">
-                  <p class="text">We’re a great team of creatives with a strongest capabilities to helping progressive
-                    fields achieve their goals. With the best talent on every project done successfully</p>
+                  <p class="text">We provide customized solutions for each client, backed by experienced professionals and a quality-first mindset that delivers successful outcomes.</p>
                 </div>
               </div>
               <div class="client-capsule-wrapper-box fade-anim" data-t-throwable-scene="true">
