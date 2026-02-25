@@ -32,7 +32,7 @@
                   <li><span class="icon"><i class="fa-solid fa-mobile-screen-button"></i></span><a href="tel:+201555665776">01555665776</a></li>
                   <li><span class="icon"><i class="fa-solid fa-location-dot"></i></span><a href="https://maps.google.com/?q=Ahmed+Bin+Hanbal+Street+Al+Naseem+Al+Gharbi+Riyadh" target="_blank" rel="noopener">Ahmed Bin Hanbal Street - Al Naseem Al Gharbi - Riyadh - Saudi Arabia</a></li>
                   <li><span class="icon"><i class="fa-solid fa-location-dot"></i></span><a href="https://maps.google.com/?q=78+Abdel+Salam+Aref+Street+Glim+Alexandria" target="_blank" rel="noopener">78 Abdel Salam Aref Street - Glim - Alexandria - Egypt</a></li>
-                  <li><span class="icon"><i class="fa-solid fa-envelope-open-text"></i></span><a href="mailto:info@bishop-solutions.com">P.O. Box: 21612</a></li>
+                  <li><span class="icon"><i class="fa-solid fa-envelope-open-text"></i></span><a href="mailto:info@bishop-solutions.com">info@bishop-solutions.com</a></li>
                 </ul>
               </div>
               <div class="footer-widget-box">

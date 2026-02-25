@@ -15,6 +15,7 @@
   <!-- Vendor CSS Files -->
   <link rel="stylesheet" href="{{asset('assets/vendor/bootstrap.min.css')}}">
   <link rel="stylesheet" href="{{asset('assets/vendor/fontawesome.min.css')}}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="{{asset('assets/vendor/swiper-bundle.min.css')}}">
   <link rel="stylesheet" href="{{asset('assets/vendor/meanmenu.min.css')}}">
   <link rel="stylesheet" href="{{asset('assets/vendor/magnific-popup.css')}}">
@@ -87,15 +88,15 @@
           <div class="contact-meta">
             <div class="contact-item">
               <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
-              <span class="text">3891 Ranchview Dr. Richardson</span>
+              <span class="text">Ahmed Bin Hanbal Street - Al Naseem Al Gharbi - Riyadh - Saudi Arabia</span>
             </div>
             <div class="contact-item">
               <span class="icon"><i class="fa-solid fa-envelope"></i></span>
-              <span class="text"><a href="mailto:hello@redoxagency.com">hello@redoxagency.com</a></span>
+              <span class="text"><a href="mailto:info@bishop-solutions.com">info@bishop-solutions.com</a></span>
             </div>
             <div class="contact-item">
               <span class="icon"><i class="fa-solid fa-phone"></i></span>
-              <span class="text"><a href="tel:(505)555-0125">(505) 555-0125</a></span>
+              <span class="text"><a href="tel:+201555665776">01555665776</a></span>
             </div>
           </div>
         </div>
@@ -123,7 +124,7 @@
                 <li><a href="{{ route('front.services.index') }}">Services</a></li>
                 <li><a href="{{ route('front.projects.index') }}">Projects</a></li>
                 <li><a href="{{ route('front.blog.index') }}">Blog</a></li>
-                <li><a href="{{ route('front.contact') }}">Contact Us</a></li>
+                <li><a href="{{ route('front.contact') }}">Contact</a></li>
               </ul>
             </nav>
           </div>
