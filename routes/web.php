@@ -1,12 +1,14 @@
 <?php
 
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\ContactSubmissionController;
 use App\Http\Controllers\ProjectsController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [PagesController::class, 'home'])->name('front.home');
 Route::view('/about', 'front.about')->name('front.about');
 Route::view('/contact', 'front.contact')->name('front.contact');
+Route::post('/contact', [ContactSubmissionController::class, 'store'])->name('front.contact.store');
 Route::get('/services', [PagesController::class, 'servicesIndex'])->name('front.services.index');
 Route::get('/services/{slug}', [PagesController::class, 'serviceShow'])->name('front.services.show');
 Route::get('/projects', [ProjectsController::class, 'frontIndex'])->name('front.projects.index');
@@ -31,6 +33,7 @@ Route::middleware('auth')->group(function () {
 
     Route::prefix('/dashboard')->name('admin.')->group(function () {
         Route::resource('projects', ProjectsController::class)->except(['show']);
+        Route::get('/contact-submissions', [ContactSubmissionController::class, 'index'])->name('contact-submissions.index');
     });
 });
 

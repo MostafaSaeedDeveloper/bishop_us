@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Project;
+use App\Models\ContactSubmission;
 use App\Models\User;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -41,9 +42,20 @@ class ProjectsController extends Controller
         $projectsCount = Project::count();
         $usersCount = User::count();
         $servicesCount = Schema::hasTable('services') ? DB::table('services')->count() : 0;
+        $contactSubmissionsCount = Schema::hasTable('contact_submissions') ? ContactSubmission::count() : 0;
         $latestProjects = Project::latest()->take(5)->get();
+        $latestContactSubmissions = Schema::hasTable('contact_submissions')
+            ? ContactSubmission::latest()->take(5)->get()
+            : collect();
 
-        return view('admin.index', compact('projectsCount', 'usersCount', 'servicesCount', 'latestProjects'));
+        return view('admin.index', compact(
+            'projectsCount',
+            'usersCount',
+            'servicesCount',
+            'contactSubmissionsCount',
+            'latestProjects',
+            'latestContactSubmissions'
+        ));
     }
 
     public function index(): View

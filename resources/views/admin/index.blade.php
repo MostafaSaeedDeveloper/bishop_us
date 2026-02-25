@@ -17,7 +17,7 @@
 
 <div class="content">
   <div class="row items-push">
-    <div class="col-sm-6 col-xl-4">
+    <div class="col-sm-6 col-xl-3">
       <div class="block block-rounded d-flex flex-column h-100 mb-0">
         <div class="block-content block-content-full text-center">
           <div class="fs-1 fw-bold">{{ $projectsCount }}</div>
@@ -25,7 +25,7 @@
         </div>
       </div>
     </div>
-    <div class="col-sm-6 col-xl-4">
+    <div class="col-sm-6 col-xl-3">
       <div class="block block-rounded d-flex flex-column h-100 mb-0">
         <div class="block-content block-content-full text-center">
           <div class="fs-1 fw-bold">{{ $servicesCount }}</div>
@@ -33,11 +33,19 @@
         </div>
       </div>
     </div>
-    <div class="col-sm-6 col-xl-4">
+    <div class="col-sm-6 col-xl-3">
       <div class="block block-rounded d-flex flex-column h-100 mb-0">
         <div class="block-content block-content-full text-center">
           <div class="fs-1 fw-bold">{{ $usersCount }}</div>
           <div class="text-muted">Users</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-xl-3">
+      <div class="block block-rounded d-flex flex-column h-100 mb-0">
+        <div class="block-content block-content-full text-center">
+          <div class="fs-1 fw-bold">{{ $contactSubmissionsCount }}</div>
+          <div class="text-muted">Contact Submissions</div>
         </div>
       </div>
     </div>
@@ -70,6 +78,41 @@
               </tr>
             @empty
               <tr><td colspan="5" class="text-center">No projects found.</td></tr>
+            @endforelse
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="block block-rounded">
+    <div class="block-header block-header-default d-flex justify-content-between align-items-center">
+      <h3 class="block-title">Latest Contact Submissions</h3>
+      <a href="{{ route('admin.contact-submissions.index') }}" class="btn btn-sm btn-alt-primary">View All</a>
+    </div>
+    <div class="block-content">
+      <div class="table-responsive">
+        <table class="table table-striped table-vcenter">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>Solution</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            @forelse($latestContactSubmissions as $submission)
+              <tr>
+                <td>{{ $submission->name }}</td>
+                <td>{{ $submission->email }}</td>
+                <td>{{ $submission->phone }}</td>
+                <td>{{ $submission->solution }}</td>
+                <td>{{ $submission->created_at->format('Y-m-d H:i') }}</td>
+              </tr>
+            @empty
+              <tr><td colspan="5" class="text-center">No contact submissions found.</td></tr>
             @endforelse
           </tbody>
         </table>
