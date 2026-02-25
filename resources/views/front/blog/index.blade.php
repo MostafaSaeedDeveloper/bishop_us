@@ -7,14 +7,14 @@
           <div class="container large">
             <div class="page-title-area-inner section-spacing-top">
               <div class="page-title-wrapper">
-                <h2 class="page-title fade-anim">Journals</h2>
+                <h2 class="page-title fade-anim">Coming Soon</h2>
               </div>
             </div>
           </div>
         </section>
         <!-- page title area end  -->
 
-        <!-- blog area start  -->
+        {{-- <!-- blog area start  -->
         <section class="blog-area-2">
           <div class="container large">
             <div class="blog-area-2-inner">
@@ -226,6 +226,6 @@
             </div>
           </div>
         </section>
-        <!-- blog area end  -->
+        <!-- blog area end  --> --}}
 
 @endsection
