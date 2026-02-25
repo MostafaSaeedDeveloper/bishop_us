@@ -19,21 +19,22 @@
                 <div class="section-header">
                   <div class="section-title-wrapper">
                     <div class="title-wrapper">
-                      <h2 class="section-title font-instrumentsans-medium char-anim" data-delay="0.45">Make Your Next Move
+                      <h2 class="section-title font-instrumentsans-medium char-anim" data-delay="0.45">Unleash Your
+                        Online Potential
                         <span><img class="title-shape-1 fade-anim" src="assets/imgs/shape/shape-1.webp" alt="image"
-                            data-direction="right" data-delay="1.80"></span><span style="color:#FFCC00">CheckMate..</span></h2>
+                            data-direction="right" data-delay="1.80"></span><span style="color:#FFCC00">With Bishop</span></h2>
                     </div>
                   </div>
                 </div>
                 <div class="section-content">
                   <div class="features-wrapper-box fade-anim" data-delay="0.75">
                   <div class="text-wrapper fade-anim" data-delay="0.75">
-                    <p class="text">Bishop Integrated Solutions Company is one of the leading companies in the field of web design and development in various Kingdom of Saudi Arabia (Riyadh – Jeddah – Dammam – Khobar – Qassim – Hail) beside our existing business in Egypt and the Arabian Gulf region. </p>
+                    <p class="text">Bishop Integrated Solutions Company is one of the leading companies in web design and development across the Kingdom of Saudi Arabia (Riyadh – Jeddah – Dammam – Khobar – Qassim – Hail), besides our existing business in Egypt and the Arabian Gulf region.</p>
                   </div>
                   </div>
 
                   <div class="text-wrapper fade-anim" data-delay="0.75">
-                    <p class="text">We’re committed to delivering the best digital marketing for your businesses</p>
+                    <p class="text">We offer web development, Odoo systems, SEO, and digital marketing solutions tailored to your business goals.</p>
                   </div>
                 </div>
               </div>
@@ -58,17 +59,17 @@
                 <div class="shape-4"></div>
                 <div class="section-title-wrapper">
                   <div class="title-wrapper">
-                    <h2 class="section-title font-instrumentsans-medium">Redox</h2>
+                    <h2 class="section-title font-instrumentsans-medium">WE’RE READY TO GROW YOUR BUSINESS WITH US</h2>
                   </div>
                 </div>
                 <div class="text-wrapper">
                   <p class="text">Our team has more than 10 years of experience in the field of designing, programming and hosting websites as well as the field of e-marketing. The company is characterized by a technical support team at a high level of competence, experience and commitment to serve customers. We are available 24 hours / 7 days a week.</p>
                 </div>
                 <div class="btn-wrapper ">
-                  <a href="contact.html" class="rr-btn  btn-text-fli hover-bg-theme">
+                  <a href="{{ route('front.about') }}" class="rr-btn  btn-text-fli hover-bg-theme">
                     <span class="btn-wrap">
-                      <span class="text-one">Learn More</span>
-                      <span class="text-two">Learn More</span>
+                      <span class="text-one">About Us</span>
+                      <span class="text-two">About Us</span>
                     </span>
                   </a>
                 </div>
@@ -266,89 +267,32 @@
               <div class="section-header">
                 <div class="section-title-wrapper fade-anim">
                   <div class="title-wrapper">
-                    <h2 class="section-title font-instrumentsans-medium word-anim">Complex <br>
-                      proficiency</h2>
+                    <h2 class="section-title font-instrumentsans-medium word-anim">WHAT WE’RE <br>
+                      OFFERING</h2>
                   </div>
                 </div>
               </div>
               <div class="services-wrapper-box">
                 <div class="services-wrapper-1">
-                  <div class="service-box fade-anim">
-                    <div class="count">
-                      <span class="number">(01)</span>
-                    </div>
+                  @foreach ($services as $index => $service)
+                    <div class="service-box fade-anim">
+                      <div class="count">
+                        <span class="number">({{ sprintf('%02d', $index + 1) }})</span>
+                      </div>
 
-                    <div class="content">
-                      <h3 class="title"><a href="service-details.html">Branding</a></h3>
-                      <ul class="service-list">
-                        <li><a href="service-details.html">Creative Direction</a></li>
-                        <li><a href="service-details.html">Brand Identity</a></li>
-                        <li><a href="service-details.html">Branding Strategy</a></li>
-                        <li><a href="service-details.html">Graphic Design</a></li>
-                        <li><a href="service-details.html">Startup</a></li>
-                      </ul>
+                      <div class="content">
+                        <h3 class="title"><a href="{{ route('front.services.show', $service['slug']) }}">{{ $service['title'] }}</a></h3>
+                        <ul class="service-list">
+                          @foreach ($service['features'] as $feature)
+                            <li><a href="{{ route('front.services.show', $service['slug']) }}">{{ $feature }}</a></li>
+                          @endforeach
+                        </ul>
+                      </div>
+                      <div class="thumb">
+                        <img class="grow" src="{{ asset($service['image']) }}" alt="{{ $service['title'] }}">
+                      </div>
                     </div>
-                    <div class="thumb">
-                      <img class="grow" src="assets/imgs/gallery/image-3.html" alt="image">
-                    </div>
-                  </div>
-                  <div class="service-box fade-anim">
-                    <div class="count">
-                      <span class="number">(02)</span>
-                    </div>
-
-                    <div class="content">
-                      <h3 class="title"><a href="service-details.html">UI-UX Design</a></h3>
-                      <ul class="service-list">
-                        <li><a href="service-details.html">UI UX Consulting</a></li>
-                        <li><a href="service-details.html">UX Research</a></li>
-                        <li><a href="service-details.html">Usability Testing</a></li>
-                        <li><a href="service-details.html">Wireframing</a></li>
-                        <li><a href="service-details.html">Prototyping</a></li>
-                      </ul>
-                    </div>
-                    <div class="thumb">
-                      <img class="grow" src="assets/imgs/gallery/image-4.html" alt="image">
-                    </div>
-                  </div>
-                  <div class="service-box fade-anim">
-                    <div class="count">
-                      <span class="number">(03)</span>
-                    </div>
-
-                    <div class="content">
-                      <h3 class="title"><a href="service-details.html">Development</a></h3>
-                      <ul class="service-list">
-                        <li><a href="service-details.html">WordPress</a></li>
-                        <li><a href="service-details.html">Webflow</a></li>
-                        <li><a href="service-details.html">Laravel Framework</a></li>
-                        <li><a href="service-details.html">React & Flutter</a></li>
-                        <li><a href="service-details.html">Design System</a></li>
-                      </ul>
-                    </div>
-                    <div class="thumb">
-                      <img class="grow" src="assets/imgs/gallery/image-5.html" alt="image">
-                    </div>
-                  </div>
-                  <div class="service-box fade-anim">
-                    <div class="count">
-                      <span class="number">(04)</span>
-                    </div>
-
-                    <div class="content">
-                      <h3 class="title"><a href="service-details.html">Digital Marketing</a></h3>
-                      <ul class="service-list">
-                        <li><a href="service-details.html">Online Marketing</a></li>
-                        <li><a href="service-details.html">SEO-Marketing</a></li>
-                        <li><a href="service-details.html">Strategy</a></li>
-                        <li><a href="service-details.html">Market Research</a></li>
-                        <li><a href="service-details.html">Social Reform</a></li>
-                      </ul>
-                    </div>
-                    <div class="thumb">
-                      <img class="grow" src="assets/imgs/gallery/image-6.html" alt="image">
-                    </div>
-                  </div>
+                  @endforeach
                 </div>
               </div>
             </div>
@@ -363,8 +307,8 @@
               <div class="section-header section-spacing-top pin-element">
                 <div class="section-title-wrapper">
                   <div class="title-wrapper">
-                    <h2 class="section-title font-instrumentsans-medium word-anim">Perfect <br>
-                      —activity</h2>
+                    <h2 class="section-title font-instrumentsans-medium word-anim">BISHOP <br>
+                      BENEFITS</h2>
                   </div>
                 </div>
               </div>
@@ -375,27 +319,29 @@
                 <span class="line-4"></span>
                 <div class="funfact-wrapper">
                   <div class="funfact-item go-visible">
-                    <span class="number">1.8M</span>
-                    <p class="text">We helped to get companies with
-                      $200M+ funding.</p>
+                    <span class="number">10+</span>
+                    <p class="text">Years of hands-on experience in web development,
+                      hosting, and digital marketing.</p>
                   </div>
                   <div class="funfact-item go-visible">
-                    <span class="number">260+</span>
-                    <p class="text">Crafted responsive, user-centered
-                      website & app.</p>
+                    <span class="number">24/7</span>
+                    <p class="text">Technical support team ready to serve your business
+                      at any time.</p>
                   </div>
                   <div class="funfact-item go-visible">
-                    <span class="number">12+</span>
-                    <p class="text">We have had quite a run in our 12+ years of working.</p>
+                    <span class="number">100%</span>
+                    <p class="text">Customized strategies tailored to your business goals,
+                      not one-size-fits-all packages.</p>
                   </div>
                   <div class="funfact-item go-visible">
-                    <span class="number">80+</span>
-                    <p class="text">Professional skilled designers and developers.</p>
+                    <span class="number">Data</span>
+                    <p class="text">Data-driven optimization across SEO, paid campaigns,
+                      and conversion-focused execution.</p>
                   </div>
                   <div class="funfact-item go-visible">
-                    <span class="number">99%</span>
-                    <p class="text">Average 99% clients satisfaction
-                      with expertise.</p>
+                    <span class="number">Quality</span>
+                    <p class="text">Quality-first delivery process to ensure every project
+                      meets high standards.</p>
                   </div>
                 </div>
               </div>

@@ -6,7 +6,9 @@ class PagesController extends Controller
 {
     public function home()
     {
-        return view('front.index');
+        return view('front.index', [
+            'services' => $this->services(),
+        ]);
     }
 
     public function servicesIndex()
