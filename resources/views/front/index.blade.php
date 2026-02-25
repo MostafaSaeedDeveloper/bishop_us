@@ -262,72 +262,72 @@
                 <div class="client-capsule-wrapper">
                   <p data-t-throwable-el="">
                     <span class="client-box bg-theme">
-                      <img src="assets/imgs/client/client-9-light.html" alt="image">
+                      <img src="{{ asset('assets/clients/client_1-1-1.png') }}" alt="Client logo">
                     </span>
                   </p>
                   <p data-t-throwable-el="">
                     <span class="client-box">
-                      <img src="assets/imgs/client/client-10.html" alt="image">
+                      <img src="{{ asset('assets/clients/client_3-1.png') }}" alt="Client logo">
                     </span>
                   </p>
                   <p data-t-throwable-el="">
                     <span class="client-box">
-                      <img src="assets/imgs/client/client-11.html" alt="image">
+                      <img src="{{ asset('assets/clients/client_10-1.png') }}" alt="Client logo">
                     </span>
                   </p>
                   <p data-t-throwable-el="">
                     <span class="client-box bg-theme">
-                      <img src="assets/imgs/client/client-12-light.html" alt="image">
+                      <img src="{{ asset('assets/clients/client_12-1.png') }}" alt="Client logo">
                     </span>
                   </p>
                   <p data-t-throwable-el="">
                     <span class="client-box">
-                      <img src="assets/imgs/client/client-13.html" alt="image">
+                      <img src="{{ asset('assets/clients/client_14-1.png') }}" alt="Client logo">
                     </span>
                   </p>
                   <p data-t-throwable-el="">
                     <span class="client-box">
-                      <img src="assets/imgs/client/client-14.html" alt="image">
+                      <img src="{{ asset('assets/clients/client_15-1.png') }}" alt="Client logo">
                     </span>
                   </p>
                   <p data-t-throwable-el="">
                     <span class="client-box bg-theme">
-                      <img src="assets/imgs/client/client-15-light.html" alt="image">
+                      <img src="{{ asset('assets/clients/client_17-1.png') }}" alt="Client logo">
                     </span>
                   </p>
                   <p data-t-throwable-el="">
                     <span class="client-box bg-theme">
-                      <img src="assets/imgs/client/client-16-light.html" alt="image">
+                      <img src="{{ asset('assets/clients/client_18-1.png') }}" alt="Client logo">
                     </span>
                   </p>
                   <p data-t-throwable-el="">
                     <span class="client-box">
-                      <img src="assets/imgs/client/client-17.html" alt="image">
+                      <img src="{{ asset('assets/clients/client_19-1.png') }}" alt="Client logo">
                     </span>
                   </p>
                   <p data-t-throwable-el="">
                     <span class="client-box bg-theme">
-                      <img src="assets/imgs/client/client-18-light.html" alt="image">
+                      <img src="{{ asset('assets/clients/client_25-1.png') }}" alt="Client logo">
                     </span>
                   </p>
                   <p data-t-throwable-el="">
                     <span class="client-box">
-                      <img src="assets/imgs/client/client-19.html" alt="image">
+                      <img src="{{ asset('assets/clients/client_27-1-1.png') }}" alt="Client logo">
                     </span>
                   </p>
                   <p data-t-throwable-el="">
                     <span class="client-box bg-theme">
-                      <img src="assets/imgs/client/client-20-light.html" alt="image">
+                      <img src="{{ asset('assets/clients/client_28-1.png') }}" alt="Client logo">
                     </span>
                   </p>
                   <p data-t-throwable-el="">
                     <span class="client-box">
-                      <img src="assets/imgs/client/client-21.html" alt="image">
+                      <img src="{{ asset('assets/clients/Prime-1-1.png') }}" alt="Client logo">
                     </span>
                   </p>
                   <p data-t-throwable-el="">
                     <span class="client-box">
-                      <img src="assets/imgs/client/client-22.html" alt="image">
+                      <img src="{{ asset('assets/clients/United-1-1.png') }}" alt="Client logo">
                     </span>
                   </p>
                 </div>
