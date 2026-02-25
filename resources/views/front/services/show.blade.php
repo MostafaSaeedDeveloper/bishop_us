@@ -1,330 +1,158 @@
 @extends('front.layout.master')
 
-
 @section('content')
-
-
-        <!-- hero area start  -->
-        <section class="hero-area-service-details">
-          <div class="container large">
-            <div class="hero-area-service-details-inner section-spacing-top">
-              <div class="service-meta fade-anim">
-                <span class="serial">[SL: {{ $service['serial'] }}]</span>
-                <span class="tag">[{{ $service['tag'] }}]</span>
-                <span class="next-item"><a href="{{ route('front.services.show', $nextService['slug']) }}">[Next: {{ $nextService['title'] }}]</a></span>
-              </div>
-              <div class="section-header fade-anim">
-                <div class="section-title-wrapper">
-                  <div class="title-wrapper">
-                    <h2 class="section-title font-sequelsans-romanbody">{{ $service['title'] }}</h2>
-                  </div>
-                </div>
-              </div>
-              <div class="section-content-wrapper fade-anim">
-                <div class="section-content">
-                  <div class="text-wrapper">
-                    <p class="text">{{ $service['summary'] }}</p>
-                  </div>
-                  <div class="feature-list">
-                    <ul>
-                      @foreach ($service['features'] as $feature)
-                        <li>{{ $feature }}</li>
-                      @endforeach
-                    </ul>
-                  </div>
-                </div>
-                <div class="section-thumb parallax-view">
-                  <img src="{{ asset($service['image']) }}" alt="{{ $service['title'] }}" data-speed="0.8">
-                </div>
-              </div>
+  <!-- hero area start  -->
+  <section class="hero-area-service-details">
+    <div class="container large">
+      <div class="hero-area-service-details-inner section-spacing-top">
+        <div class="service-meta fade-anim">
+          <span class="serial">[SL: {{ $service['serial'] }}]</span>
+          <span class="tag">[{{ $service['tag'] }}]</span>
+          <span class="next-item"><a href="{{ route('front.services.show', $nextService['slug']) }}">[Next: {{ $nextService['title'] }}]</a></span>
+        </div>
+        <div class="section-header fade-anim">
+          <div class="section-title-wrapper">
+            <div class="title-wrapper">
+              <h2 class="section-title font-sequelsans-romanbody">{{ $service['title'] }}</h2>
             </div>
           </div>
-        </section>
-        <!-- hero area end  -->
-
-        <!-- approach area start  -->
-        <section class="approach-area-service-details-page">
-          <div class="container large">
-            <div class="approach-area-service-details-page-inner section-spacing">
-              <div class="section-header">
-                <div class="section-title-wrapper">
-                  <div class="subtitle-wrapper fade-anim" data-direction="left">
-                    <span class="section-subtitle">Our comprehensive <br>
-                      delivery process</span>
-                  </div>
-                  <div class="title-wrapper fade-anim" data-direction="right">
-                    <h2 class="section-title font-sequelsans-romanbody">Our {{ $service['title'] }} service is built around strategy, execution, and measurable results.</h2>
-                  </div>
-                </div>
-              </div>
-              <div class="approach-wrapper-box">
-                <span class="steps fade-anim">04</span>
-                <div class="approach-wrapper fade-anim" data-direction="right">
-                  <div class="approach-box">
-                    <span class="number">01</span>
-                    <h3 class="title">Discovery & Research</h3>
-                    <p class="text">Our mission is to empower the brands we believe in with tailor-made approaches
-                      that ignite creativity and growth without limits.</p>
-                  </div>
-                  <div class="approach-box">
-                    <span class="number">02</span>
-                    <h3 class="title">Wireframing & Prototyping</h3>
-                    <p class="text">Our mission is to empower the brands we believe in with tailor-made approaches
-                      that ignite creativity and growth without limits.</p>
-                  </div>
-                  <div class="approach-box">
-                    <span class="number">03</span>
-                    <h3 class="title">Design System</h3>
-                    <p class="text">Our mission is to empower the brands we believe in with tailor-made approaches
-                      that ignite creativity and growth without limits.</p>
-                  </div>
-                  <div class="approach-box">
-                    <span class="number">04</span>
-                    <h3 class="title">Design Validation</h3>
-                    <p class="text">Our mission is to empower the brands we believe in with tailor-made approaches
-                      that ignite creativity and growth without limits.</p>
-                  </div>
-                </div>
-              </div>
+        </div>
+        <div class="section-content-wrapper fade-anim">
+          <div class="section-content">
+            <div class="text-wrapper">
+              <p class="text">{{ $service['summary'] }}</p>
+            </div>
+            <div class="feature-list">
+              <ul>
+                @foreach ($service['features'] as $feature)
+                  <li>{{ $feature }}</li>
+                @endforeach
+              </ul>
             </div>
           </div>
-        </section>
-        <!-- approach area end  -->
+          <div class="section-thumb parallax-view">
+            <img src="{{ asset($service['image']) }}" alt="{{ $service['title'] }}" data-speed="0.8">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- hero area end  -->
 
-        <!-- feature area start  -->
-        <section class="feature-area">
-          <div class="container large">
-            <div class="feature-area-inner section-spacing-top">
-              <div class="features-wrapper-box fade-anim">
-                <div class="features-wrapper">
-                  <div class="feature-box">
-                    <div class="thumb">
-                      <img src="assets/imgs/shape/shape-15.webp" alt="image">
-                    </div>
-                    <div class="content">
-                      <h3 class="title">Skilled <br>
-                        design team</h3>
-                      <p class="text">We work closely with your team to understand your mission, values, and goals,
-                        forming the foundation of your brand identity.</p>
-                    </div>
-                  </div>
-                  <div class="feature-box">
-                    <div class="thumb">
-                      <img src="assets/imgs/shape/shape-16.webp" alt="image">
-                    </div>
-                    <div class="content">
-                      <h3 class="title">User-centric <br>
-                        design</h3>
-                      <p class="text">We bring extensive experience across various industries, delivering tailored
-                        design solutions that meet specific sector needs.</p>
-                    </div>
-                  </div>
-                  <div class="feature-box">
-                    <div class="thumb">
-                      <img src="assets/imgs/shape/shape-17.webp" alt="image">
-                    </div>
-                    <div class="content">
-                      <h3 class="title">Data-driven <br>
-                        approach</h3>
-                      <p class="text">Our designs are guided by data and user insights, ensuring optimal usability and
-                        impactful user experiences.</p>
-                    </div>
-                  </div>
-                  <div class="feature-box">
-                    <div class="thumb">
-                      <img src="assets/imgs/shape/shape-18.webp" alt="image">
-                    </div>
-                    <div class="content">
-                      <h3 class="title">Collaborative <br>
-                        process</h3>
-                      <p class="text">We work closely with you throughout the design journey, incorporating your
-                        feedback to create designs that align with your vision.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+  <!-- approach area start  -->
+  <section class="approach-area-service-details-page">
+    <div class="container large">
+      <div class="approach-area-service-details-page-inner section-spacing">
+        <div class="section-header">
+          <div class="section-title-wrapper">
+            <div class="subtitle-wrapper fade-anim" data-direction="left">
+              <span class="section-subtitle">{!! $service['process_subtitle'] !!}</span>
+            </div>
+            <div class="title-wrapper fade-anim" data-direction="right">
+              <h2 class="section-title font-sequelsans-romanbody">{{ $service['process_title'] }}</h2>
             </div>
           </div>
-        </section>
-        <!-- feature area end  -->
+        </div>
+        <div class="approach-wrapper-box">
+          <span class="steps fade-anim">{{ sprintf('%02d', count($service['process_steps'])) }}</span>
+          <div class="approach-wrapper fade-anim" data-direction="right">
+            @foreach ($service['process_steps'] as $index => $step)
+              <div class="approach-box">
+                <span class="number">{{ sprintf('%02d', $index + 1) }}</span>
+                <h3 class="title">{{ $step['title'] }}</h3>
+                <p class="text">{{ $step['text'] }}</p>
+              </div>
+            @endforeach
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- approach area end  -->
 
-        <!-- value area start  -->
-        <section class="value-area">
-          <div class="container large">
-            <div class="value-area-inner section-spacing">
-              <div class="section-content-wrapper fade-anim">
-                <div class="section-thumb parallax-view">
-                  <img src="assets/imgs/gallery/image-25.webp" alt="image" data-speed="0.8">
+  <!-- feature area start  -->
+  <section class="feature-area">
+    <div class="container large">
+      <div class="feature-area-inner section-spacing-top">
+        <div class="features-wrapper-box fade-anim">
+          <div class="features-wrapper">
+            @foreach ($service['benefits'] as $benefit)
+              <div class="feature-box">
+                <div class="thumb">
+                  <img src="{{ asset('assets/imgs/shape/shape-15.webp') }}" alt="shape">
                 </div>
-                <div class="section-content">
-                  <div class="section-title-wrapper">
-                    <div class="title-wrapper">
-                      <h2 class="section-title font-sequelsans-romanbody">We sharpen your brands and
-                        businesses create exceptional
-                        experiences where people live
-                        work </h2>
-                    </div>
-                  </div>
-                  <div class="values-wrapper">
-                    <div class="value-box">
-                      <h3 class="number">2750</h3>
-                      <p class="text">A website refresh or redesign is a comprehensive overhaul that includes
-                        substantial changes to the content, structure, visuals, and code of your current website.</p>
-                    </div>
-                    <div class="value-box">
-                      <h3 class="number">92%</h3>
-                      <p class="text">High-quality custom logo design for Melbourne businesses. We are here to support
-                        you. Description - Our logo design package uniquely blends creative skills and strategic
-                        thinking. We don't just create brand identities.</p>
-                    </div>
-                    <div class="value-box">
-                      <h3 class="number">75%</h3>
-                      <p class="text">Every creative design begins with a clear objective. Whether it's branding,
-                        advertising, product design and user experience, the design must align with the intended
-                        purpose to effectively communicate its beyond beauty.</p>
-                    </div>
-                  </div>
+                <div class="content">
+                  <h3 class="title">{{ $benefit['title'] }}</h3>
+                  <p class="text">{{ $benefit['text'] }}</p>
                 </div>
               </div>
+            @endforeach
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- feature area end  -->
+
+  <!-- value area start -->
+  <section class="value-area">
+    <div class="container large">
+      <div class="value-area-inner section-spacing-top">
+        <div class="section-header fade-anim">
+          <div class="section-title-wrapper">
+            <div class="title-wrapper">
+              <h2 class="section-title font-sequelsans-romanbody">{{ $service['value_title'] }}</h2>
             </div>
           </div>
-        </section>
-        <!-- value area end  -->
+        </div>
+        <div class="value-box-wrapper fade-anim">
+          @foreach ($service['value_cards'] as $card)
+            <div class="value-box">
+              <h3 class="number">{{ $card['number'] }}</h3>
+              <p class="text">{{ $card['text'] }}</p>
+            </div>
+          @endforeach
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- value area end -->
 
-        <!-- faq area start  -->
-        <section class="faq-area">
-          <div class="container large">
-            <div class="faq-area-inner section-spacing-top">
-              <div class="section-header fade-anim">
-                <div class="section-title-wrapper">
-                  <div class="subtitle-wrapper">
-                    <span class="section-subtitle">FAQ</span>
-                  </div>
-                  <div class="title-wrapper">
-                    <h2 class="section-title font-sequelsans-romanbody">Learn some common
-                      answers about newly
-                      projects</h2>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-wrapper fade-anim">
-                <div class="accordion" id="accordionExample">
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                        Bring their individual experience and creative?
-                      </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        People know what an FAQ is, so make that your page title. Don’t overcomplicate things by
-                        calling it “Good to Know” or “More Info”. Sometimes people put the frequently asked questions
-                        section on their Contact page, but you can create your own page and put it right in your
-                        website navigation menu
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                        Design should enrich our day?
-                      </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        People know what an FAQ is, so make that your page title. Don’t overcomplicate things by
-                        calling it “Good to Know” or “More Info”. Sometimes people put the frequently asked questions
-                        section on their Contact page, but you can create your own page and put it right in your
-                        website navigation menu
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Human centered design to challenges design theory?
-                      </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        People know what an FAQ is, so make that your page title. Don’t overcomplicate things by
-                        calling it “Good to Know” or “More Info”. Sometimes people put the frequently asked questions
-                        section on their Contact page, but you can create your own page and put it right in your
-                        website navigation menu
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        Align with your brand look and feel?
-                      </button>
-                    </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        People know what an FAQ is, so make that your page title. Don’t overcomplicate things by
-                        calling it “Good to Know” or “More Info”. Sometimes people put the frequently asked questions
-                        section on their Contact page, but you can create your own page and put it right in your
-                        website navigation menu
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                        How to become an Agile productive manager?
-                      </button>
-                    </h2>
-                    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        People know what an FAQ is, so make that your page title. Don’t overcomplicate things by
-                        calling it “Good to Know” or “More Info”. Sometimes people put the frequently asked questions
-                        section on their Contact page, but you can create your own page and put it right in your
-                        website navigation menu
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                        Why we create the best Webflow websites in Figma?
-                      </button>
-                    </h2>
-                    <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        People know what an FAQ is, so make that your page title. Don’t overcomplicate things by
-                        calling it “Good to Know” or “More Info”. Sometimes people put the frequently asked questions
-                        section on their Contact page, but you can create your own page and put it right in your
-                        website navigation menu
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                        How to manage Agile project teams?
-                      </button>
-                    </h2>
-                    <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        People know what an FAQ is, so make that your page title. Don’t overcomplicate things by
-                        calling it “Good to Know” or “More Info”. Sometimes people put the frequently asked questions
-                        section on their Contact page, but you can create your own page and put it right in your
-                        website navigation menu
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+  <!-- faq area start  -->
+  <section class="faq-area">
+    <div class="container large">
+      <div class="faq-area-inner section-spacing-top">
+        <div class="section-header fade-anim">
+          <div class="section-title-wrapper">
+            <div class="subtitle-wrapper">
+              <span class="section-subtitle">FAQ</span>
+            </div>
+            <div class="title-wrapper">
+              <h2 class="section-title font-sequelsans-romanbody">Common questions about {{ $service['title'] }}</h2>
             </div>
           </div>
-        </section>
-        <!-- faq area end  -->
+        </div>
+        <div class="accordion-wrapper fade-anim">
+          <div class="accordion" id="accordionExample">
+            @foreach ($service['faqs'] as $index => $faq)
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button {{ $index === 0 ? '' : 'collapsed' }}" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faqCollapse{{ $index }}" aria-expanded="{{ $index === 0 ? 'true' : 'false' }}" aria-controls="faqCollapse{{ $index }}">
+                    {{ $faq['question'] }}
+                  </button>
+                </h2>
+                <div id="faqCollapse{{ $index }}" class="accordion-collapse collapse {{ $index === 0 ? 'show' : '' }}" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    {{ $faq['answer'] }}
+                  </div>
+                </div>
+              </div>
+            @endforeach
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- faq area end  -->
 @endsection
