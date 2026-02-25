@@ -15,6 +15,7 @@
             </div>
             <div class="title-wrapper">
               <h2 class="section-title font-sequelsans-romanbody">{{ $project->name }}</h2>
+                          <p style="font-size: 18px;margin-top:10px" class="text">{{ $project->short_description }}</p>
             </div>
           </div>
         </div>
@@ -40,7 +41,7 @@
       <div class="image-wrapper parallax-view fade-anim">
         <img class="w-100" src="{{ $primaryImage }}" alt="{{ $project->name }}" data-speed="0.8">
       </div>
-      <div class="container large">
+      {{-- <div class="container large">
         <div class="section-info fade-anim">
           <div class="title-wrapper">
             <h2 class="title">{{ $project->short_description }}</h2>
@@ -59,7 +60,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> --}}
       @php
         $galleryItems = $project->galleryMedia;
       @endphp
@@ -74,7 +75,7 @@
           </div>
         @endforelse
       </div>
-      <div class="container large">
+      {{-- <div class="container large">
         <div class="section-details fade-anim">
           <div class="details-info">
             <h3 class="title">Project Overview</h3>
@@ -85,7 +86,7 @@
             <p class="text">{{ \Illuminate\Support\Str::limit($project->description, 260) }}</p>
           </div>
         </div>
-      </div>
+      </div> --}}
       @if($similarProjects->isNotEmpty())
         <div class="gallery-wrapper-2 fade-anim">
           <div class="image parallax-view">
