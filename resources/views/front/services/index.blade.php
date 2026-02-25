@@ -90,76 +90,58 @@
               </div>
               <div class="client-capsule-wrapper-box fade-anim" data-t-throwable-scene="true">
                 <div class="client-capsule-wrapper">
+@php
+                  $clientLogos = [
+                    '12-1.png',
+                    '13-1.png',
+                    '14-1.png',
+                    '17-1.png',
+                    '19-1.png',
+                    '21-1.png',
+                    'Asset-1@300x-1.png',
+                    'Everest-1-1.png',
+                    'Fath-1-1.png',
+                    'Ganna-1-1.png',
+                    'Hakenz-1-1.png',
+                    'Logo-04-white-300x300-1-1.png',
+                    'Metro-1-1.png',
+                    'Patterns-1.png',
+                    'Petrol_Abu_Qeer-1-1.png',
+                    'Prime-1-1.png',
+                    'Rakizat-1-1.png',
+                    'Sho_la-1-1.png',
+                    'UBES-1-1.png',
+                    'United-1-1.png',
+                    'Untitled-1-01-2-q25bxd5nx17v2nk9awyc5b5yomgm3qfotyd6y7cwsg-1.png',
+                    'cert50-2-1.png',
+                    'client_1-1-1.png',
+                    'client_10-1.png',
+                    'client_12-1.png',
+                    'client_14-1.png',
+                    'client_15-1.png',
+                    'client_17-1.png',
+                    'client_18-1.png',
+                    'client_19-1.png',
+                    'client_25-1.png',
+                    'client_27-1-1.png',
+                    'client_28-1.png',
+                    'client_3-1.png',
+                    'logo-Black-1.png',
+                    'logoomar-1.png',
+                    'unnamed-1.png.webp'
+                  ];
+                  $forceThemeLogos = ['Logo-04-white-300x300-1-1.png', 'United-1-1.png', 'client_12-1.png', 'client_18-1.png', 'client_28-1.png', 'unnamed-1.png.webp'];
+                @endphp
+                @foreach ($clientLogos as $index => $logo)
+                  @php
+                    $useTheme = in_array($logo, $forceThemeLogos, true) || $index % 2 === 1;
+                  @endphp
                   <p data-t-throwable-el="">
-                    <span class="client-box">
-                      <img src="assets/imgs/client/client-9.webp" alt="image">
+                    <span class="client-box{{ $useTheme ? ' bg-theme' : '' }}">
+                      <img src="{{ asset('assets/clients/' . $logo) }}" alt="Client logo">
                     </span>
                   </p>
-                  <p data-t-throwable-el="">
-                    <span class="client-box">
-                      <img src="assets/imgs/client/client-10.webp" alt="image">
-                    </span>
-                  </p>
-                  <p data-t-throwable-el="">
-                    <span class="client-box">
-                      <img src="assets/imgs/client/client-11.webp" alt="image">
-                    </span>
-                  </p>
-                  <p data-t-throwable-el="">
-                    <span class="client-box">
-                      <img src="assets/imgs/client/client-12.webp" alt="image">
-                    </span>
-                  </p>
-                  <p data-t-throwable-el="">
-                    <span class="client-box">
-                      <img src="assets/imgs/client/client-13.webp" alt="image">
-                    </span>
-                  </p>
-                  <p data-t-throwable-el="">
-                    <span class="client-box">
-                      <img src="assets/imgs/client/client-14.webp" alt="image">
-                    </span>
-                  </p>
-                  <p data-t-throwable-el="">
-                    <span class="client-box">
-                      <img src="assets/imgs/client/client-15.webp" alt="image">
-                    </span>
-                  </p>
-                  <p data-t-throwable-el="">
-                    <span class="client-box">
-                      <img src="assets/imgs/client/client-16.webp" alt="image">
-                    </span>
-                  </p>
-                  <p data-t-throwable-el="">
-                    <span class="client-box">
-                      <img src="assets/imgs/client/client-17.webp" alt="image">
-                    </span>
-                  </p>
-                  <p data-t-throwable-el="">
-                    <span class="client-box">
-                      <img src="assets/imgs/client/client-18.webp" alt="image">
-                    </span>
-                  </p>
-                  <p data-t-throwable-el="">
-                    <span class="client-box">
-                      <img src="assets/imgs/client/client-19.webp" alt="image">
-                    </span>
-                  </p>
-                  <p data-t-throwable-el="">
-                    <span class="client-box">
-                      <img src="assets/imgs/client/client-20.webp" alt="image">
-                    </span>
-                  </p>
-                  <p data-t-throwable-el="">
-                    <span class="client-box">
-                      <img src="assets/imgs/client/client-21.webp" alt="image">
-                    </span>
-                  </p>
-                  <p data-t-throwable-el="">
-                    <span class="client-box">
-                      <img src="assets/imgs/client/client-22.webp" alt="image">
-                    </span>
-                  </p>
+                @endforeach
                 </div>
               </div>
               <div class="lines-wrapper">
