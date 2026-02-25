@@ -29,40 +29,42 @@
   .floating-whatsapp {
     position: fixed;
     right: 20px;
-    bottom: 86px;
-    width: 52px;
-    height: 52px;
-    border-radius: 50%;
-    background: #25d366;
-    color: #fff;
+    bottom: 20px;
+    height: 46px;
+    width: 46px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-size: 28px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    z-index: 100;
+    border-radius: 50px;
+    z-index: 99;
     opacity: 0;
     visibility: hidden;
-    transform: translateY(18px) scale(0.95);
-    transition: opacity 0.25s ease, visibility 0.25s ease, transform 0.25s ease, box-shadow 0.2s ease;
+    transform: translateY(-100px);
+    transition: all 300ms linear;
   }
 
-  .floating-whatsapp.active-whatsapp {
+  .floating-whatsapp.active-progress {
     opacity: 1;
     visibility: visible;
-    transform: translateY(0) scale(1);
-    animation: whatsapp-float 1.8s ease-in-out infinite;
+    transform: translateY(0);
+    mix-blend-mode: exclusion;
+    background-color: var(--black);
   }
 
-  .floating-whatsapp:hover {
-    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.35);
-    color: #fff;
+  .floating-whatsapp i {
+    font-size: 20px;
+    color: var(--primary);
+    transition: all 200ms linear;
+  }
+
+  .dark .floating-whatsapp i {
+    color: var(--black);
   }
 
   .progress-wrap {
     left: 20px;
     right: auto;
-    z-index: 100;
+    z-index: 99;
   }
 
   .progress-wrap::after {
@@ -74,25 +76,11 @@
   @media (max-width: 767px) {
     .floating-whatsapp {
       right: 16px;
-      bottom: 82px;
-      width: 48px;
-      height: 48px;
-      font-size: 24px;
+      bottom: 20px;
     }
 
     .progress-wrap {
       left: 16px;
-    }
-  }
-
-  @keyframes whatsapp-float {
-    0%,
-    100% {
-      transform: translateY(0) scale(1);
-    }
-
-    50% {
-      transform: translateY(-8px) scale(1.02);
     }
   }
 </style>
@@ -107,9 +95,9 @@
 
     var toggleWhatsapp = function () {
       if (window.scrollY > 50) {
-        whatsappButton.classList.add('active-whatsapp');
+        whatsappButton.classList.add('active-progress');
       } else {
-        whatsappButton.classList.remove('active-whatsapp');
+        whatsappButton.classList.remove('active-progress');
       }
     };
 
