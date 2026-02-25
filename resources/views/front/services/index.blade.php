@@ -32,82 +32,25 @@
               </div>
               <div class="services-wrapper-box fade-anim">
                 <div class="services-wrapper-1">
-                  <div class="service-box fade-anim">
-                    <div class="count">
-                      <span class="number">(01)</span>
-                    </div>
+                  @foreach ($services as $index => $service)
+                    <div class="service-box fade-anim">
+                      <div class="count">
+                        <span class="number">({{ sprintf('%02d', $index + 1) }})</span>
+                      </div>
 
-                    <div class="content">
-                      <h3 class="title"><a href="service-details.html">Branding</a></h3>
-                      <ul class="service-list">
-                        <li><a href="service-details.html">Creative Direction</a></li>
-                        <li><a href="service-details.html">Brand Identity</a></li>
-                        <li><a href="service-details.html">Branding Strategy</a></li>
-                        <li><a href="service-details.html">Graphic Design</a></li>
-                        <li><a href="service-details.html">Startup</a></li>
-                      </ul>
+                      <div class="content">
+                        <h3 class="title"><a href="{{ route('front.services.show', $service['slug']) }}">{{ $service['title'] }}</a></h3>
+                        <ul class="service-list">
+                          @foreach ($service['features'] as $feature)
+                            <li><a href="{{ route('front.services.show', $service['slug']) }}">{{ $feature }}</a></li>
+                          @endforeach
+                        </ul>
+                      </div>
+                      <div class="thumb">
+                        <img class="grow" src="{{ asset($service['image']) }}" alt="{{ $service['title'] }}">
+                      </div>
                     </div>
-                    <div class="thumb">
-                      <img class="grow" src="assets/imgs/gallery/image-3.webp" alt="image">
-                    </div>
-                  </div>
-                  <div class="service-box fade-anim">
-                    <div class="count">
-                      <span class="number">(02)</span>
-                    </div>
-
-                    <div class="content">
-                      <h3 class="title"><a href="service-details.html">UI-UX Design</a></h3>
-                      <ul class="service-list">
-                        <li><a href="service-details.html">UI UX Consulting</a></li>
-                        <li><a href="service-details.html">UX Research</a></li>
-                        <li><a href="service-details.html">Usability Testing</a></li>
-                        <li><a href="service-details.html">Wireframing</a></li>
-                        <li><a href="service-details.html">Prototyping</a></li>
-                      </ul>
-                    </div>
-                    <div class="thumb">
-                      <img class="grow" src="assets/imgs/gallery/image-4.webp" alt="image">
-                    </div>
-                  </div>
-                  <div class="service-box fade-anim">
-                    <div class="count">
-                      <span class="number">(03)</span>
-                    </div>
-
-                    <div class="content">
-                      <h3 class="title"><a href="service-details.html">Development</a></h3>
-                      <ul class="service-list">
-                        <li><a href="service-details.html">WordPress</a></li>
-                        <li><a href="service-details.html">Webflow</a></li>
-                        <li><a href="service-details.html">Laravel Framework</a></li>
-                        <li><a href="service-details.html">React & Flutter</a></li>
-                        <li><a href="service-details.html">Design System</a></li>
-                      </ul>
-                    </div>
-                    <div class="thumb">
-                      <img class="grow" src="assets/imgs/gallery/image-5.webp" alt="image">
-                    </div>
-                  </div>
-                  <div class="service-box fade-anim">
-                    <div class="count">
-                      <span class="number">(04)</span>
-                    </div>
-
-                    <div class="content">
-                      <h3 class="title"><a href="service-details.html">Digital Marketing</a></h3>
-                      <ul class="service-list">
-                        <li><a href="service-details.html">Online Marketing</a></li>
-                        <li><a href="service-details.html">SEO-Marketing</a></li>
-                        <li><a href="service-details.html">Strategy</a></li>
-                        <li><a href="service-details.html">Market Research</a></li>
-                        <li><a href="service-details.html">Social Reform</a></li>
-                      </ul>
-                    </div>
-                    <div class="thumb">
-                      <img class="grow" src="assets/imgs/gallery/image-6.webp" alt="image">
-                    </div>
-                  </div>
+                  @endforeach
                 </div>
               </div>
               <div class="service-content-wrapper section-spacing-top">
