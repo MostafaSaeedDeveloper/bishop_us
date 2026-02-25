@@ -4528,11 +4528,11 @@ video.video-area {
   }
 }
 .funfact-area .funfact-item .number {
-  font-size: 130px;
-  font-weight: 500;
-  line-height: 0.7;
-  display: inline-block;
-  color: var(--white);
+    font-size: 59px;
+    font-weight: 500;
+    line-height: 1;
+    display: inline-block;
+    color: var(--white);
 }
 @media only screen and (max-width: 1399px) {
   .funfact-area .funfact-item .number {

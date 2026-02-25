@@ -19,10 +19,9 @@
                 <div class="section-header">
                   <div class="section-title-wrapper">
                     <div class="title-wrapper">
-                      <h2 class="section-title font-instrumentsans-medium char-anim" data-delay="0.45">Unleash Your
-                        Online Potential
+                      <h2 class="section-title font-instrumentsans-medium char-anim" data-delay="0.45">Make Your Next Move
                         <span><img class="title-shape-1 fade-anim" src="assets/imgs/shape/shape-1.webp" alt="image"
-                            data-direction="right" data-delay="1.80"></span><span style="color:#FFCC00">With Bishop</span></h2>
+                            data-direction="right" data-delay="1.80"></span><span style="color:#FFCC00">CheckMate..</span></h2>
                     </div>
                   </div>
                 </div>
