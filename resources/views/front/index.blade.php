@@ -94,48 +94,14 @@
             <div class="text-slider">
               <div class="swiper text-slider-active">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="text-slider-item">
-                      <h2 class="title"><span class="dot"></span>Featured work
-                      </h2>
+                  @for ($i = 0; $i < 7; $i++)
+                    <div class="swiper-slide">
+                      <div class="text-slider-item">
+                        <h2 class="title"><span class="dot"></span>Featured work
+                        </h2>
+                      </div>
                     </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="text-slider-item">
-                      <h2 class="title"><span class="dot"></span>Featured work
-                      </h2>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="text-slider-item">
-                      <h2 class="title"><span class="dot"></span>Featured work
-                      </h2>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="text-slider-item">
-                      <h2 class="title"><span class="dot"></span>Featured work
-                      </h2>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="text-slider-item">
-                      <h2 class="title"><span class="dot"></span>Featured work
-                      </h2>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="text-slider-item">
-                      <h2 class="title"><span class="dot"></span>Featured work
-                      </h2>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="text-slider-item">
-                      <h2 class="title"><span class="dot"></span>Featured work
-                      </h2>
-                    </div>
-                  </div>
+                  @endfor
                 </div>
               </div>
             </div>
@@ -154,100 +120,38 @@
                   <p class="text">Excellency in creative designs</p>
                 </div>
                 <div class="total-count">
-                  <span class="number">(26)</span>
+                  <span class="number">({{ $featuredProjects->count() }})</span>
                 </div>
               </div>
               <div class="works-wrapper-box">
                 <div class="works-wrapper-1 fade-anim">
-                  <div class="work-box">
-                    <div class="thumb">
-                      <div class="image scale" data-cursor-text="View Project">
-                        <a href="portfolio-details.html"><img src="assets/imgs/project/image-1.webp" alt="image"></a>
+                  @forelse($featuredProjects as $project)
+                    <div class="work-box">
+                      <div class="thumb">
+                        <div class="image scale" data-cursor-text="View Project">
+                          <a href="{{ route('front.projects.show', $project) }}"><img src="{{ $project->primaryImageUrl() ?: asset('assets/imgs/project/image-1.webp') }}" alt="{{ $project->name }}"></a>
+                        </div>
                       </div>
-                    </div>
-                    <div class="content">
-                      <h3 class="title"><a href="portfolio-details.html">Panda Automap</a></h3>
-                      <div class="meta">
-                        <span class="tag">Development</span>
-                        <span class="date">2025</span>
-                      </div>
+                      <div class="content">
+                        <h3 class="title"><a href="{{ route('front.projects.show', $project) }}">{{ $project->name }}</a></h3>
+                        <div class="meta">
+                          <span class="tag">{{ $project->category ?: 'General' }}</span>
+                          <span class="date">{{ optional($project->execution_date)->format('Y') ?? $project->created_at->format('Y') }}</span>
+                        </div>
 
-                    </div>
-                  </div>
-                  <div class="work-box">
-                    <div class="thumb">
-                      <div class="image scale" data-cursor-text="View Project">
-                        <a href="portfolio-details.html"><img src="assets/imgs/project/image-2.html" alt="image"></a>
                       </div>
                     </div>
-                    <div class="content">
-                      <h3 class="title"><a href="portfolio-details.html">Saudi Venture Capital</a></h3>
-                      <div class="meta">
-                        <span class="tag">Graphics</span>
-                        <span class="date">2025</span>
+                  @empty
+                    <div class="work-box">
+                      <div class="content">
+                        <h3 class="title">No projects available right now.</h3>
                       </div>
                     </div>
-                  </div>
-                  <div class="work-box">
-                    <div class="thumb">
-                      <div class="image scale" data-cursor-text="View Project">
-                        <a href="portfolio-details.html"><img src="assets/imgs/project/image-3.html" alt="image"></a>
-                      </div>
-                    </div>
-                    <div class="content">
-                      <h3 class="title"><a href="portfolio-details.html">Rebrand Lawberry</a></h3>
-                      <div class="meta">
-                        <span class="tag">Motion, Design</span>
-                        <span class="date">2025</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="work-box">
-                    <div class="thumb">
-                      <div class="image scale" data-cursor-text="View Project">
-                        <a href="portfolio-details.html"><img src="assets/imgs/project/image-4.html" alt="image"></a>
-                      </div>
-                    </div>
-                    <div class="content">
-                      <h3 class="title"><a href="portfolio-details.html">Selicon Cloud Cave</a></h3>
-                      <div class="meta">
-                        <span class="tag">UI Design</span>
-                        <span class="date">2025</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="work-box">
-                    <div class="thumb">
-                      <div class="image scale" data-cursor-text="View Project">
-                        <a href="portfolio-details.html"><img src="assets/imgs/project/image-5.html" alt="image"></a>
-                      </div>
-                    </div>
-                    <div class="content">
-                      <h3 class="title"><a href="portfolio-details.html">Mountain Upwork</a></h3>
-                      <div class="meta">
-                        <span class="tag">Branding</span>
-                        <span class="date">2025</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="work-box">
-                    <div class="thumb">
-                      <div class="image scale" data-cursor-text="View Project">
-                        <a href="portfolio-details.html"><img src="assets/imgs/project/image-6.html" alt="image"></a>
-                      </div>
-                    </div>
-                    <div class="content">
-                      <h3 class="title"><a href="portfolio-details.html">Blacky Motorola</a></h3>
-                      <div class="meta">
-                        <span class="tag">UI Design</span>
-                        <span class="date">2025</span>
-                      </div>
-                    </div>
-                  </div>
+                  @endforelse
                 </div>
               </div>
               <div class="all-btn-wrapper fade-anim">
-                <a href="portfolio.html" class="rr-btn btn-border hover-bg-theme">
+                <a href="{{ route('front.projects.index') }}" class="rr-btn btn-border hover-bg-theme">
                   <span class="btn-wrap">
                     <span class="text-one">View All Work</span>
                     <span class="text-two">View All Work</span>

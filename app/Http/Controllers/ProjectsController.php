@@ -17,7 +17,7 @@ class ProjectsController extends Controller
 {
     public function frontIndex(): View
     {
-        $projects = Project::query()->where('status', 'published')->latest()->paginate(9);
+        $projects = Project::query()->with('media')->where('status', 'published')->latest()->paginate(9);
 
         return view('front.projects.index', compact('projects'));
     }
@@ -26,7 +26,32 @@ class ProjectsController extends Controller
     {
         $project->load('media');
 
+        $previousProject = Project::query()
+            ->where('status', 'published')
+            ->where('id', '<', $project->id)
+            ->latest('id')
+            ->first();
+
+        $nextProject = Project::query()
+            ->where('status', 'published')
+            ->where('id', '>', $project->id)
+            ->oldest('id')
+            ->first();
+
+        $previousProject ??= Project::query()
+            ->where('status', 'published')
+            ->where('id', '!=', $project->id)
+            ->latest('id')
+            ->first();
+
+        $nextProject ??= Project::query()
+            ->where('status', 'published')
+            ->where('id', '!=', $project->id)
+            ->oldest('id')
+            ->first();
+
         $similarProjects = Project::query()
+            ->with('media')
             ->where('id', '!=', $project->id)
             ->when($project->category, fn ($query) => $query->where('category', $project->category))
             ->where('status', 'published')
@@ -34,7 +59,7 @@ class ProjectsController extends Controller
             ->take(3)
             ->get();
 
-        return view('front.projects.show', compact('project', 'similarProjects'));
+        return view('front.projects.show', compact('project', 'similarProjects', 'previousProject', 'nextProject'));
     }
 
     public function dashboard(): View

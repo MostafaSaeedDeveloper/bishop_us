@@ -86,11 +86,59 @@
         </table>
       </div>
 
-      <div class="mt-3">
-        {{ $projects->links() }}
+      <div class="mt-3 admin-projects-pagination">
+        {{ $projects->links('pagination::bootstrap-5') }}
       </div>
     </div>
   </div>
 </div>
 <!-- END Page Content -->
 @endsection
+
+
+<style>
+  .admin-projects-pagination nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  .admin-projects-pagination .pagination {
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+
+  .admin-projects-pagination .page-link {
+    min-width: 48px;
+    height: 48px;
+    border-radius: 999px !important;
+    border: 1px solid rgba(255, 204, 0, 0.35);
+    background-color: rgba(255, 204, 0, 0.08);
+    color: #b88b00;
+    font-weight: 700;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+  }
+
+  .admin-projects-pagination .page-item.active .page-link {
+    background-color: #ffcc00;
+    border-color: #ffcc00;
+    color: #111;
+  }
+
+  .admin-projects-pagination .page-item.disabled .page-link {
+    background-color: rgba(0, 0, 0, 0.04);
+    border-color: rgba(0, 0, 0, 0.08);
+    color: #999;
+  }
+
+  .admin-projects-pagination .page-link:hover {
+    background-color: #ffcc00;
+    border-color: #ffcc00;
+    color: #111;
+  }
+</style>
