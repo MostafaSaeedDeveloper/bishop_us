@@ -41,12 +41,20 @@
     font-size: 28px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
     z-index: 100;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    animation: whatsapp-float 2.2s ease-in-out infinite;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(18px) scale(0.95);
+    transition: opacity 0.25s ease, visibility 0.25s ease, transform 0.25s ease, box-shadow 0.2s ease;
+  }
+
+  .floating-whatsapp.active-whatsapp {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+    animation: whatsapp-float 1.8s ease-in-out infinite;
   }
 
   .floating-whatsapp:hover {
-    transform: translateY(-3px);
     box-shadow: 0 14px 30px rgba(0, 0, 0, 0.35);
     color: #fff;
   }
@@ -80,14 +88,35 @@
   @keyframes whatsapp-float {
     0%,
     100% {
-      transform: translateY(0);
+      transform: translateY(0) scale(1);
     }
 
     50% {
-      transform: translateY(-5px);
+      transform: translateY(-8px) scale(1.02);
     }
   }
 </style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var whatsappButton = document.querySelector('.floating-whatsapp');
+
+    if (!whatsappButton) {
+      return;
+    }
+
+    var toggleWhatsapp = function () {
+      if (window.scrollY > 50) {
+        whatsappButton.classList.add('active-whatsapp');
+      } else {
+        whatsappButton.classList.remove('active-whatsapp');
+      }
+    };
+
+    toggleWhatsapp();
+    window.addEventListener('scroll', toggleWhatsapp, { passive: true });
+  });
+</script>
 
   <!-- Vendor JS Files -->
   <script src="{{asset('assets/vendor/jquery-3.7.1.min.js')}}"></script>
