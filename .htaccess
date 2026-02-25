@@ -4,10 +4,12 @@
     # If request is already inside /public, don't rewrite again.
     RewriteCond %{REQUEST_URI} !^/public/
 
-    # Serve existing files/directories from project root as-is.
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
-
-    # Forward all other requests to the public folder.
+    # If the requested path exists in /public, serve it from there.
+    RewriteCond %{DOCUMENT_ROOT}/public%{REQUEST_URI} -f [OR]
+    RewriteCond %{DOCUMENT_ROOT}/public%{REQUEST_URI} -d
     RewriteRule ^(.*)$ public/$1 [L]
+
+    # Otherwise, send the request to Laravel front controller in /public.
+    RewriteCond %{REQUEST_URI} !^/public/
+    RewriteRule ^ public/index.php [L]
 </IfModule>
