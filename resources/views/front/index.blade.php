@@ -19,21 +19,21 @@
                 <div class="section-header">
                   <div class="section-title-wrapper">
                     <div class="title-wrapper">
-                      <h2 class="section-title font-instrumentsans-medium char-anim" data-delay="0.45">Build Digital Growth
+                      <h2 class="section-title font-instrumentsans-medium char-anim" data-delay="0.45">Make Your Next Move
                         <span><img class="title-shape-1 fade-anim" src="assets/imgs/shape/shape-1.webp" alt="image"
-                            data-direction="right" data-delay="1.80"></span><span style="color:#FFCC00">with Bishop.</span></h2>
+                            data-direction="right" data-delay="1.80"></span><span style="color:#FFCC00">CheckMate..</span></h2>
                     </div>
                   </div>
                 </div>
                 <div class="section-content">
                   <div class="features-wrapper-box fade-anim" data-delay="0.75">
                   <div class="text-wrapper fade-anim" data-delay="0.75">
-                    <p class="text">Bishop Integrated Solutions helps businesses in Saudi Arabia and the Gulf build strong digital experiences through web design, ecommerce development, digital marketing, and SEO services.</p>
+                    <p class="text">Bishop Integrated Solutions Company is one of the leading companies in the field of web design and development in various Kingdom of Saudi Arabia (Riyadh – Jeddah – Dammam – Khobar – Qassim – Hail) beside our existing business in Egypt and the Arabian Gulf region. </p>
                   </div>
                   </div>
 
                   <div class="text-wrapper fade-anim" data-delay="0.75">
-                    <p class="text">We focus on measurable performance, fast delivery, and long-term partnerships that support your business growth.</p>
+                    <p class="text">We’re committed to delivering the best digital marketing for your businesses</p>
                   </div>
                 </div>
               </div>
@@ -58,17 +58,17 @@
                 <div class="shape-4"></div>
                 <div class="section-title-wrapper">
                   <div class="title-wrapper">
-                    <h2 class="section-title font-instrumentsans-medium">Why Bishop</h2>
+                    <h2 class="section-title font-instrumentsans-medium">Redox</h2>
                   </div>
                 </div>
                 <div class="text-wrapper">
-                  <p class="text">With 10+ years of practical experience, our team delivers professional websites and growth campaigns backed by reliable support, clear communication, and a quality-first mindset.</p>
+                  <p class="text">Our team has more than 10 years of experience in the field of designing, programming and hosting websites as well as the field of e-marketing. The company is characterized by a technical support team at a high level of competence, experience and commitment to serve customers. We are available 24 hours / 7 days a week.</p>
                 </div>
                 <div class="btn-wrapper ">
                   <a href="contact.html" class="rr-btn  btn-text-fli hover-bg-theme">
                     <span class="btn-wrap">
-                      <span class="text-one">About Us</span>
-                      <span class="text-two">About Us</span>
+                      <span class="text-one">Learn More</span>
+                      <span class="text-two">Learn More</span>
                     </span>
                   </a>
                 </div>
@@ -266,8 +266,8 @@
               <div class="section-header">
                 <div class="section-title-wrapper fade-anim">
                   <div class="title-wrapper">
-                    <h2 class="section-title font-instrumentsans-medium word-anim">Services <br>
-                      we deliver</h2>
+                    <h2 class="section-title font-instrumentsans-medium word-anim">Complex <br>
+                      proficiency</h2>
                   </div>
                 </div>
               </div>
@@ -279,13 +279,13 @@
                     </div>
 
                     <div class="content">
-                      <h3 class="title"><a href="{{ route('front.services.show', 'web-design-development') }}">Web Design &amp; Development</a></h3>
+                      <h3 class="title"><a href="service-details.html">Branding</a></h3>
                       <ul class="service-list">
-                        <li><a href="{{ route('front.services.show', 'web-design-development') }}">Custom UI/UX Design</a></li>
-                        <li><a href="{{ route('front.services.show', 'web-design-development') }}">Responsive Layouts</a></li>
-                        <li><a href="{{ route('front.services.show', 'web-design-development') }}">CMS Integration</a></li>
-                        <li><a href="{{ route('front.services.show', 'web-design-development') }}">Performance Optimization</a></li>
-                        <li><a href="{{ route('front.services.show', 'web-design-development') }}">Maintenance &amp; Support</a></li>
+                        <li><a href="service-details.html">Creative Direction</a></li>
+                        <li><a href="service-details.html">Brand Identity</a></li>
+                        <li><a href="service-details.html">Branding Strategy</a></li>
+                        <li><a href="service-details.html">Graphic Design</a></li>
+                        <li><a href="service-details.html">Startup</a></li>
                       </ul>
                     </div>
                     <div class="thumb">
@@ -298,13 +298,13 @@
                     </div>
 
                     <div class="content">
-                      <h3 class="title"><a href="{{ route('front.services.show', 'ecommerce-web-development') }}">Ecommerce Web Development</a></h3>
+                      <h3 class="title"><a href="service-details.html">UI-UX Design</a></h3>
                       <ul class="service-list">
-                        <li><a href="{{ route('front.services.show', 'ecommerce-web-development') }}">Storefront Design</a></li>
-                        <li><a href="{{ route('front.services.show', 'ecommerce-web-development') }}">Payment Integration</a></li>
-                        <li><a href="{{ route('front.services.show', 'ecommerce-web-development') }}">Product &amp; Inventory Setup</a></li>
-                        <li><a href="{{ route('front.services.show', 'ecommerce-web-development') }}">Checkout Optimization</a></li>
-                        <li><a href="{{ route('front.services.show', 'ecommerce-web-development') }}">Security Best Practices</a></li>
+                        <li><a href="service-details.html">UI UX Consulting</a></li>
+                        <li><a href="service-details.html">UX Research</a></li>
+                        <li><a href="service-details.html">Usability Testing</a></li>
+                        <li><a href="service-details.html">Wireframing</a></li>
+                        <li><a href="service-details.html">Prototyping</a></li>
                       </ul>
                     </div>
                     <div class="thumb">
@@ -317,13 +317,13 @@
                     </div>
 
                     <div class="content">
-                      <h3 class="title"><a href="{{ route('front.services.show', 'digital-marketing') }}">Digital Marketing</a></h3>
+                      <h3 class="title"><a href="service-details.html">Development</a></h3>
                       <ul class="service-list">
-                        <li><a href="{{ route('front.services.show', 'digital-marketing') }}">Campaign Strategy</a></li>
-                        <li><a href="{{ route('front.services.show', 'digital-marketing') }}">Content Planning</a></li>
-                        <li><a href="{{ route('front.services.show', 'digital-marketing') }}">Paid Ads Management</a></li>
-                        <li><a href="{{ route('front.services.show', 'digital-marketing') }}">Social Media Marketing</a></li>
-                        <li><a href="{{ route('front.services.show', 'digital-marketing') }}">Performance Reporting</a></li>
+                        <li><a href="service-details.html">WordPress</a></li>
+                        <li><a href="service-details.html">Webflow</a></li>
+                        <li><a href="service-details.html">Laravel Framework</a></li>
+                        <li><a href="service-details.html">React & Flutter</a></li>
+                        <li><a href="service-details.html">Design System</a></li>
                       </ul>
                     </div>
                     <div class="thumb">
@@ -336,13 +336,13 @@
                     </div>
 
                     <div class="content">
-                      <h3 class="title"><a href="{{ route('front.services.show', 'search-engine-optimization-seo') }}">Search Engine Optimization (SEO)</a></h3>
+                      <h3 class="title"><a href="service-details.html">Digital Marketing</a></h3>
                       <ul class="service-list">
-                        <li><a href="{{ route('front.services.show', 'search-engine-optimization-seo') }}">SEO Audit</a></li>
-                        <li><a href="{{ route('front.services.show', 'search-engine-optimization-seo') }}">On-Page Optimization</a></li>
-                        <li><a href="{{ route('front.services.show', 'search-engine-optimization-seo') }}">Technical SEO</a></li>
-                        <li><a href="{{ route('front.services.show', 'search-engine-optimization-seo') }}">Keyword Strategy</a></li>
-                        <li><a href="{{ route('front.services.show', 'search-engine-optimization-seo') }}">Monthly SEO Reporting</a></li>
+                        <li><a href="service-details.html">Online Marketing</a></li>
+                        <li><a href="service-details.html">SEO-Marketing</a></li>
+                        <li><a href="service-details.html">Strategy</a></li>
+                        <li><a href="service-details.html">Market Research</a></li>
+                        <li><a href="service-details.html">Social Reform</a></li>
                       </ul>
                     </div>
                     <div class="thumb">
@@ -363,8 +363,8 @@
               <div class="section-header section-spacing-top pin-element">
                 <div class="section-title-wrapper">
                   <div class="title-wrapper">
-                    <h2 class="section-title font-instrumentsans-medium word-anim">Results <br>
-                      that matter</h2>
+                    <h2 class="section-title font-instrumentsans-medium word-anim">Perfect <br>
+                      —activity</h2>
                   </div>
                 </div>
               </div>
@@ -376,23 +376,26 @@
                 <div class="funfact-wrapper">
                   <div class="funfact-item go-visible">
                     <span class="number">1.8M</span>
-                    <p class="text">Supported businesses with strategic digital solutions and measurable growth goals.</p>
+                    <p class="text">We helped to get companies with
+                      $200M+ funding.</p>
                   </div>
                   <div class="funfact-item go-visible">
                     <span class="number">260+</span>
-                    <p class="text">Successfully delivered high-performance websites and ecommerce experiences.</p>
+                    <p class="text">Crafted responsive, user-centered
+                      website & app.</p>
                   </div>
                   <div class="funfact-item go-visible">
                     <span class="number">12+</span>
-                    <p class="text">More than a decade of experience serving companies across multiple industries.</p>
+                    <p class="text">We have had quite a run in our 12+ years of working.</p>
                   </div>
                   <div class="funfact-item go-visible">
                     <span class="number">80+</span>
-                    <p class="text">A dedicated team of designers, developers, and digital marketing specialists.</p>
+                    <p class="text">Professional skilled designers and developers.</p>
                   </div>
                   <div class="funfact-item go-visible">
                     <span class="number">99%</span>
-                    <p class="text">Long-term client relationships built on quality execution and consistent support.</p>
+                    <p class="text">Average 99% clients satisfaction
+                      with expertise.</p>
                   </div>
                 </div>
               </div>
@@ -408,14 +411,15 @@
               <div class="section-content">
                 <div class="section-title-wrapper">
                   <div class="title-wrapper">
-                    <h2 class="section-title font-instrumentsans-medium word-anim"><span>Clients:</span> Helping brands
-                      grow online with
-                      websites and campaigns
-                      built for conversion.</h2>
+                    <h2 class="section-title font-instrumentsans-medium word-anim"><span>Client:</span> Helping brands
+                      to grow
+                      and say their success stories to
+                      the world.</h2>
                   </div>
                 </div>
                 <div class="text-wrapper fade-anim">
-                  <p class="text">From startups to established businesses, we provide practical digital solutions that improve visibility, increase leads, and support long-term business performance.</p>
+                  <p class="text">We’re a great team of creatives with a strongest capabilities to helping progressive
+                    fields achieve their goals. With the best talent on every project done successfully</p>
                 </div>
               </div>
               <div class="client-capsule-wrapper-box" data-t-throwable-scene="true">

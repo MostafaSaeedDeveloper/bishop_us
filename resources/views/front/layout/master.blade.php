@@ -12,72 +12,9 @@
 
       @include('front.layout.footer')
 
-      <a href="https://wa.me/201555665776"
-         class="floating-whatsapp"
-         target="_blank"
-         rel="noopener"
-         aria-label="WhatsApp">
-        <i class="fa-brands fa-whatsapp"></i>
-      </a>
-
     </div>
   </div>
 
-
-
-<style>
-  .floating-whatsapp {
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    height: 46px;
-    width: 46px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50px;
-    z-index: 999;
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-    transition: all 300ms linear;
-    mix-blend-mode: exclusion;
-    background-color: var(--black);
-  }
-
-  .floating-whatsapp i {
-    font-size: 20px;
-    color: var(--primary);
-    transition: all 200ms linear;
-  }
-
-  .dark .floating-whatsapp i {
-    color: var(--black);
-  }
-
-  .progress-wrap {
-    left: 20px;
-    right: auto;
-    z-index: 99;
-  }
-
-  .progress-wrap::after {
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    content: "\f062";
-  }
-
-  @media (max-width: 767px) {
-    .floating-whatsapp {
-      right: 16px;
-      bottom: 20px;
-    }
-
-    .progress-wrap {
-      left: 16px;
-    }
-  }
-</style>
 
   <!-- Vendor JS Files -->
   <script src="{{asset('assets/vendor/jquery-3.7.1.min.js')}}"></script>
